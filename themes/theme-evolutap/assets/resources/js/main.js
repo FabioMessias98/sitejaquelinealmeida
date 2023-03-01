@@ -20,6 +20,7 @@ import Aos from "aos";
   require("./components/swiper-folk");
   require("./components/newsletter-validation");
   require("./components/submenu-active");
+  require("./components/swiper-courses");
 
   if (routes.checkRoute("about") ||
       routes.checkRoute("blog") ||
