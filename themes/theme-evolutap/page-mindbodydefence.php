@@ -131,7 +131,7 @@ get_header();
 </div>
 <!-- end submenu -->
 
-<!-- program -->
+<!-- program teste -->
 <?php if(have_rows( 'the_programme' )) : 
 		while(have_rows( 'the_programme' )) : the_row();
 ?>
