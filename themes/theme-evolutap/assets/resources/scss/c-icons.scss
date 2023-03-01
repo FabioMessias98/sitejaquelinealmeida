@@ -1,0 +1,46 @@
+.u-icon__brands::before {
+    font-family: 'Font Awesome 5 Brands';
+}
+
+.u-icon{
+    &__brands{
+        &::before{
+            font-family: 'Font Awesome 5 Brands';
+        }
+    }
+    &__free{
+        &::before{
+            font-family: "Font Awesome 5 Free";
+        }
+    }
+    &__instagram-square{
+        &::before{
+            content: '\f16d';
+        }
+    }
+    &__pipeline{
+        &::before{
+            content: '\7c';
+        }
+    }
+    &__linkedin{
+        &::before{
+            content: '\f0e1';
+        }
+    }
+    &__chevron-right{
+        &::before{
+            content: '\F054';
+        }
+    }
+    &__phone{
+        &::before{
+            content: '\f879';
+        }
+    }
+    &__message{
+        &::before{
+            content: '\f0e0';
+        }
+    }
+}

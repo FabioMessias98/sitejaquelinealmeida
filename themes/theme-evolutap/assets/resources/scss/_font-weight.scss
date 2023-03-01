@@ -1,0 +1,18 @@
+.u-font-weight{
+    &-bold{
+        font-weight: 700;
+    }
+    &-black{
+        font-weight: 900;
+    }
+}
+
+.before\:\:{
+    &u-font-weight{
+        &-black{
+            &::before{
+                font-weight: 900;
+            }
+        }
+    }
+}

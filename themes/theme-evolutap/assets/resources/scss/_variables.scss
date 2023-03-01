@@ -1,0 +1,33 @@
+$spacer: 1rem !default;
+$spacers: () !default;
+// stylelint-disable-next-line scss/dollar-variable-default
+$spacers: map-merge((0: 0,
+    1: ($spacer * .25),
+    2: ($spacer * .5),
+    3: $spacer,
+    4: ($spacer * 1.5),
+    5: ($spacer * 3),
+    6: ($spacer * 4.6),
+    7: ($spacer * 6),
+    8: ($spacer * 6.5),
+    9: ($spacer * 8),
+    10:($spacer  * 12.3),
+    11:($spacer  * 2.18)
+    ),
+
+  $spacers);
+
+$menu-button-color: #000;
+
+$primary-color: #ff0;
+$color-folk-strong-gray: #666666;
+$color-folk-yellow: #F1A004;
+$color-folk-strong-black: #000;
+$color-folk-white: #FFF;
+$color-folk-purple:#470099;
+$color-folk-yellow-weak:#f6df35;
+$color-folk-yellow-clear:#f9e00c;
+$color-folk-pink:#f729d1;
+$color-folk-light-purple:#7919e6;
+$color-folk-purple-clear:#8e12ea;
+$color-folk-gray:#f0f0f0;

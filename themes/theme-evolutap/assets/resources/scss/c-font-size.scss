@@ -1,0 +1,76 @@
+.before\:\:u-font-size-45::before {
+    font-size: 45px;
+}
+
+.before\:\:u-font-size-32::before {
+    font-size: 32px;
+}
+
+.font-size {
+    &-0{
+        font-size:0px;
+    }
+    &-20{
+        font-size:20px;
+    }
+    &-22{
+        font-size:22px;
+    }
+    &-30{
+        font-size:30px;
+    }
+    &-40{
+        font-size:40px;
+    }
+    &-45{
+        font-size:45px;
+    }
+    &-54{
+        font-size:54px;
+    }
+    &-57{
+        font-size:57px;
+    }
+    &-64{
+        font-size:64px;
+    }
+    &-73{
+        font-size:73px;
+    }
+    &-84{
+        font-size:84px;
+    }
+    &-100{
+        font-size:100px;
+    }
+    &-121{
+        font-size:121px;
+    }
+    &-160{
+        font-size:160px;
+    }
+    &-250{
+        font-size:250px;
+    }
+}
+
+.before\:\:{
+    &u-font-size{
+        &-45{
+            &::before{
+                font-size:45px;
+            }
+        }
+        &-57{
+            &::before{
+                font-size:57px;
+            }
+        }
+        &-32{
+            &::before{
+                font-size:32px;
+            }
+        }
+    }
+}
+

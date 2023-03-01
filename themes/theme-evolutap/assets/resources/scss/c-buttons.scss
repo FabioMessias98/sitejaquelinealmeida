@@ -1,0 +1,46 @@
+
+.button-cta{
+    &:hover{
+        background-color:#8B008B;
+        transition-duration: .7s;
+        color: black;
+    }
+    border-radius: 10px;
+    color: white;
+    background-color: #7919e5;
+    &--watch-my {
+        background-color: #db2fcd !important;
+        &:hover {
+            background-color: yellow !important;
+            transition-duration: .7s;
+            color: black;
+        }
+    }
+    &--join-now {
+        background-color: yellow !important;
+        color:#7919e5;
+    }
+    &--watch-now {
+        background-color: #f729d1 !important;
+        color:#fff;
+    }
+    &--learn-blog {
+        background-color: #f729d1 !important;
+        color:#fff;
+        font-size: 22px;
+        &:hover {
+            background-color: yellow !important;
+            transition-duration: .7s;
+            color: black;
+        }
+    }
+    &--view-all{
+        background-color: #7919e5!important;
+        color:#fff;
+        &:hover {
+            background-color: yellow !important;
+            transition-duration: .7s;
+            color: black;
+        }
+    }
+}

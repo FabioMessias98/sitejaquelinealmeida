@@ -1,0 +1,163 @@
+/*!
+Theme Name: Evolutap
+Theme URI: http://underscores.me/
+Author: Evolutap
+Author URI: https://evolutap.com.br
+Description: Theme Evolutap
+Version: 1.0.0
+License: GNU General Public License v2 or later
+License URI: LICENSE
+Text Domain: evolutap
+Tags: custom-background, custom-logo, custom-menu, featured-images, threaded-comments, translation-ready
+
+This theme, like WordPress, is licensed under the GPL.
+Use it to make something cool, have fun, and share what you've learned with others.
+
+Evolutap is based on Underscores https://underscores.me/, (C) 2012-2017 Automattic, Inc.
+Underscores is distributed under the terms of the GNU GPL v2 or later.
+
+Normalizing styles have been helped along thanks to the fine work of
+Nicolas Gallagher and Jonathan Neal https://necolas.github.io/normalize.css/
+*/
+
+/*--------------------------------------------------------------
+# Accessibility
+--------------------------------------------------------------*/
+/* Text meant only for screen readers. */
+
+/* page collections */
+.collections__view {
+
+}
+
+.collections__product-title {
+	font-size: 1.125rem;
+	font-weight: 600;
+}
+
+.collections__product-price {
+	font-size: 1.125rem;
+	font-weight: 300;
+}
+
+.collections__size {
+	margin: .2rem;
+    padding: .5rem 2rem;
+    transition: all .6s;
+    border-radius: 16px;
+    overflow: hidden;
+    position: relative;
+    font-weight: 600;
+    text-transform: uppercase;
+    text-decoration: none !important;
+}
+
+.collections__size.disable {
+	border: 1px solid #E0DADA;
+	color: #E0DADA;
+	cursor: not-allowed;
+}
+
+.collections__size.active {
+	border: 1px solid #F1A004;
+	color: #F1A004;
+}
+
+.collections__size.active::before {
+	content: 'view';
+	width: 100%;
+	height: 100%;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -200%);
+	transition: all .6s;
+	position: absolute;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	font-weight: 600;
+	color: #FFF;
+	background-color: #F1A004;
+}
+
+.collections__size.active:hover {
+	color: #FFF;
+	background-color: #F1A004;
+}
+
+.collections__size.active:hover::before {
+	transform: translate(-50%, -50%);
+}
+
+.collections__btn-buy {
+	padding: .5rem 2rem;
+	transition: all .6s;
+	border-radius: 8px;
+	outline: none !important;
+	text-decoration: none !important;
+	font-weight: 600;
+	color: #FFF !important;
+}
+
+.collections__btn-buy:hover {
+	background-color: #000;
+}
+
+/* swiper */
+.card-img:hover .swiper-button-next-collections {
+	right: 0 !important;
+}
+
+.card-img:hover .swiper-button-prev-collections {
+	left: 0 !important;
+}
+
+.swiper-button-next-collections {
+	width: 50px !important;
+	height: 50px !important;
+	right: -20% !important;
+	transition: all .6s;
+	background-color: #F1A004;
+}
+
+.swiper-button-prev-collections {
+	width: 50px !important;
+	height: 50px !important;
+	left: -20% !important;
+	transition: all .6s;
+	background-color: #F1A004;
+}
+
+.swiper-button-next-collections::after,
+.swiper-button-prev-collections::after {
+	font-size: 2rem !important;
+	color: #FFF;
+}
+
+/* pagination */
+.swiper-pagination-collections .swiper-pagination-bullet-active {
+	background-color: #F1A004 !important;
+}
+
+.u-divider-yellow {
+	width: 100%;
+	height: 2px;
+	background-color: #F1A004;
+}
+
+.collections__box-size {
+	width: 30px;
+    height: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: 500;
+    text-transform: uppercase;
+    color: #FFF;
+    background-color: #F1A004; 
+}
+
+.collections__content {
+	font-weight: 400;
+	color: #404040;
+}

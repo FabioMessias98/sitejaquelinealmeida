@@ -1,0 +1,41 @@
+.search {
+	&__date {
+		font-size: .75rem;
+	}
+
+	.type-post {
+		display: flex;
+		flex-wrap: wrap;
+	}
+
+	.post-thumbnail {
+		width: 30%;
+		max-width: 30%;
+		flex: 0 0 30%;	
+		transition: all .6s;
+		opacity: 1;
+		overflow: hidden;
+
+		img {
+			transition: all .6s;
+		}
+
+		&:hover {
+			opacity: .9;
+
+			img {
+				transform: scale(1.1);
+			}
+		}
+
+		@media screen and (max-width: 767px) {
+			width: 100%;
+			max-width: 100%;
+			flex: 0 0 100%;
+		}
+	}
+}
+
+.navigation.posts-navigation {
+	display: none !important;
+}

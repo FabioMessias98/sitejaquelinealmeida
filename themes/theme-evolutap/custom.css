@@ -1,0 +1,48 @@
+.u-list-style-none {
+    list-style: none;    
+}
+
+
+.hover\:u-color-folk-black:hover {
+    color: black;
+    transition-duration: .5s;
+}
+
+.letter-spacing-0 {
+    letter-spacing: 0px;
+}
+
+.px-25::before{
+    padding: 0 25px
+}
+
+a:hover {
+    text-decoration:none;
+}
+
+.image-banner-form {
+    background-image: url(assets/public/images/banner-form.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+input::placeholder{
+    color: white!important;
+}
+ 
+.swiper-button-prev-defence-videos::after,
+.swiper-button-next-defence-videos::after{
+    font-family: 'Font Awesome 5 Free';
+    font-weight: 900;
+    color: white;
+}
+
+.swiper-button-prev-defence-videos::after{
+    content: '\f053';
+}
+
+.swiper-button-next-defence-videos::after{
+    content: '\f054';
+}
+
+

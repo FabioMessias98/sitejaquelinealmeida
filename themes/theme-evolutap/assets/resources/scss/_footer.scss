@@ -1,0 +1,26 @@
+.footer {
+	&--box {
+		width: 160px;
+		height: 160px;
+		border-radius: 50%;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		// background-color: #1B1D1E;
+
+		@media screen and (min-width: 1600px) {
+			width: 270px;
+			height: 270px;
+		}
+	}
+
+	&--logo,
+	&--title,
+	&--items {
+		font-size: 1rem; /* full hd 2rem */
+
+		@media screen and (min-width: 1600px) {
+			font-size: 2rem;			
+		}
+	}
+}
