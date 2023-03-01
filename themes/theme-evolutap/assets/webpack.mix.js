@@ -16,6 +16,7 @@ const ImageminWebpWebpackPlugin = require("imagemin-webp-webpack-plugin");
 mix.js("resources/js/main.js", "public/js");
 mix
   .sass("resources/scss/main.scss", "public/css")
+  .sass("resources/scss/custom.scss", "public/css")
   .sourceMaps(true, "source-map")
   .copyDirectory("resources/fonts", "public/fonts");
 mix.webpackConfig({
