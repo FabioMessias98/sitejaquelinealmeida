@@ -1,0 +1,432 @@
+{
+    "RPT": {
+        "ScanTime": "1.92 sec.",
+        "ScanFile": "20210524_jaquelinealmeida_927ffeed2f7430039199_20230301140425_scan.json",
+        "Warnings": 0,
+        "Success": 6
+    },
+    "SRV": {
+        "PHP": {
+            "websrv": true,
+            "openbase": true,
+            "maxtime": true,
+            "mysqli": true,
+            "version": true
+        },
+        "SYS": {
+            "managedHost": true,
+            "ALL": "Good"
+        },
+        "WP": {
+            "version": true,
+            "core": true,
+            "ismu": false,
+            "ALL": "Good"
+        }
+    },
+    "ARC": {
+        "Size": "0B",
+        "DirCount": "0",
+        "FileCount": "0",
+        "FullCount": "0",
+        "WarnFileCount": 0,
+        "WarnDirCount": 0,
+        "UnreadableDirCount": 0,
+        "UnreadableFileCount": 0,
+        "FilterDirsAll": [
+            "C:\/laragon\/www\/jaqueline\/.opcache",
+            "C:\/laragon\/www\/jaqueline\/wp-content\/ai1wm-backups",
+            "C:\/laragon\/www\/jaqueline\/wp-content\/backups-dup-lite",
+            "C:\/laragon\/www\/jaqueline\/wp-content\/backups-dup-pro",
+            "C:\/laragon\/www\/jaqueline\/wp-content\/backupwordpress",
+            "C:\/laragon\/www\/jaqueline\/wp-content\/bps-backup",
+            "C:\/laragon\/www\/jaqueline\/wp-content\/cache",
+            "C:\/laragon\/www\/jaqueline\/wp-content\/content\/cache",
+            "C:\/laragon\/www\/jaqueline\/wp-content\/contents\/cache",
+            "C:\/laragon\/www\/jaqueline\/wp-content\/infinitewp\/backups",
+            "C:\/laragon\/www\/jaqueline\/wp-content\/managewp\/backups",
+            "C:\/laragon\/www\/jaqueline\/wp-content\/old-cache",
+            "C:\/laragon\/www\/jaqueline\/wp-content\/plugins\/all-in-one-wp-migration\/storage",
+            "C:\/laragon\/www\/jaqueline\/wp-content\/updraft",
+            "C:\/laragon\/www\/jaqueline\/wp-content\/uploads\/aiowps_backups",
+            "C:\/laragon\/www\/jaqueline\/wp-content\/uploads\/backupbuddy_backups",
+            "C:\/laragon\/www\/jaqueline\/wp-content\/uploads\/backupbuddy_temp",
+            "C:\/laragon\/www\/jaqueline\/wp-content\/uploads\/ithemes-security\/backups",
+            "C:\/laragon\/www\/jaqueline\/wp-content\/uploads\/mainwp\/backup",
+            "C:\/laragon\/www\/jaqueline\/wp-content\/uploads\/pb_backupbuddy",
+            "C:\/laragon\/www\/jaqueline\/wp-content\/uploads\/snapshots",
+            "C:\/laragon\/www\/jaqueline\/wp-content\/uploads\/sucuri",
+            "C:\/laragon\/www\/jaqueline\/wp-content\/uploads\/wp-clone",
+            "C:\/laragon\/www\/jaqueline\/wp-content\/uploads\/wp_all_backup",
+            "C:\/laragon\/www\/jaqueline\/wp-content\/uploads\/wpbackitup_backups",
+            "C:\/laragon\/www\/jaqueline\/wp-content\/wfcache",
+            "C:\/laragon\/www\/jaqueline\/wp-content\/wishlist-backup",
+            "C:\/laragon\/www\/jaqueline\/wp-snapshots"
+        ],
+        "FilterFilesAll": [
+            "error_log",
+            "error.log",
+            "debug_log",
+            "ws_ftp.log",
+            "dbcache",
+            "pgcache",
+            "objectcache",
+            ".DS_Store",
+            "C:\/laragon\/www\/jaqueline\/.htaccess",
+            "C:\/laragon\/www\/jaqueline\/web.config",
+            "C:\/laragon\/www\/jaqueline\/wp-config.php"
+        ],
+        "FilterExtsAll": [],
+        "FilterInfo": {
+            "Dirs": {
+                "Warning": [],
+                "Unreadable": [],
+                "AddonSites": [],
+                "Core": [
+                    "C:\/laragon\/www\/jaqueline\/wp-snapshots",
+                    "C:\/laragon\/www\/jaqueline\/wp-content\/backups-dup-lite",
+                    "C:\/laragon\/www\/jaqueline\/.opcache",
+                    "C:\/laragon\/www\/jaqueline\/wp-content\/backups-dup-pro",
+                    "C:\/laragon\/www\/jaqueline\/wp-content\/ai1wm-backups",
+                    "C:\/laragon\/www\/jaqueline\/wp-content\/backupwordpress",
+                    "C:\/laragon\/www\/jaqueline\/wp-content\/content\/cache",
+                    "C:\/laragon\/www\/jaqueline\/wp-content\/contents\/cache",
+                    "C:\/laragon\/www\/jaqueline\/wp-content\/infinitewp\/backups",
+                    "C:\/laragon\/www\/jaqueline\/wp-content\/managewp\/backups",
+                    "C:\/laragon\/www\/jaqueline\/wp-content\/old-cache",
+                    "C:\/laragon\/www\/jaqueline\/wp-content\/plugins\/all-in-one-wp-migration\/storage",
+                    "C:\/laragon\/www\/jaqueline\/wp-content\/updraft",
+                    "C:\/laragon\/www\/jaqueline\/wp-content\/wishlist-backup",
+                    "C:\/laragon\/www\/jaqueline\/wp-content\/wfcache",
+                    "C:\/laragon\/www\/jaqueline\/wp-content\/bps-backup",
+                    "C:\/laragon\/www\/jaqueline\/wp-content\/cache",
+                    "C:\/laragon\/www\/jaqueline\/wp-content\/uploads\/aiowps_backups",
+                    "C:\/laragon\/www\/jaqueline\/wp-content\/uploads\/backupbuddy_temp",
+                    "C:\/laragon\/www\/jaqueline\/wp-content\/uploads\/backupbuddy_backups",
+                    "C:\/laragon\/www\/jaqueline\/wp-content\/uploads\/ithemes-security\/backups",
+                    "C:\/laragon\/www\/jaqueline\/wp-content\/uploads\/mainwp\/backup",
+                    "C:\/laragon\/www\/jaqueline\/wp-content\/uploads\/pb_backupbuddy",
+                    "C:\/laragon\/www\/jaqueline\/wp-content\/uploads\/snapshots",
+                    "C:\/laragon\/www\/jaqueline\/wp-content\/uploads\/sucuri",
+                    "C:\/laragon\/www\/jaqueline\/wp-content\/uploads\/wp-clone",
+                    "C:\/laragon\/www\/jaqueline\/wp-content\/uploads\/wp_all_backup",
+                    "C:\/laragon\/www\/jaqueline\/wp-content\/uploads\/wpbackitup_backups"
+                ],
+                "Global": [],
+                "Instance": []
+            },
+            "Files": {
+                "Size": [],
+                "Warning": [],
+                "Unreadable": [],
+                "AddonSites": [],
+                "Core": [],
+                "Global": [
+                    "error_log",
+                    "error.log",
+                    "debug_log",
+                    "ws_ftp.log",
+                    "dbcache",
+                    "pgcache",
+                    "objectcache",
+                    ".DS_Store"
+                ],
+                "Instance": []
+            },
+            "Exts": {
+                "Core": [],
+                "Global": [],
+                "Instance": []
+            },
+            "UDirCount": 0,
+            "UFileCount": 0,
+            "UExtCount": 0,
+            "TreeSize": [],
+            "TreeWarning": []
+        },
+        "RecursiveLinks": [],
+        "UnreadableItems": [],
+        "Status": {
+            "Size": "Good",
+            "Names": "Good",
+            "UnreadableItems": "Good",
+            "MigratePackage": "Good",
+            "CanbeMigratePackage": true,
+            "showCreateProcStatus": "Good",
+            "showCreateProc": true,
+            "AddonSites": "Good"
+        },
+        "Dirs": [],
+        "Files": []
+    },
+    "DB": {
+        "Status": {
+            "Success": true,
+            "DB_Case": "Good",
+            "DB_Rows": "Good",
+            "DB_Size": "Good",
+            "TBL_Case": "Good",
+            "TBL_Rows": "Good",
+            "TBL_Size": "Good",
+            "Triggers": "Good"
+        },
+        "Size": "9.95MB",
+        "Rows": "23,285",
+        "TableCount": 41,
+        "TableList": {
+            "wp_actionscheduler_actions": {
+                "Case": 0,
+                "Rows": "11",
+                "Size": "128KB",
+                "USize": 131072
+            },
+            "wp_actionscheduler_claims": {
+                "Case": 0,
+                "Rows": "0",
+                "Size": "32KB",
+                "USize": 32768
+            },
+            "wp_actionscheduler_groups": {
+                "Case": 0,
+                "Rows": "2",
+                "Size": "32KB",
+                "USize": 32768
+            },
+            "wp_actionscheduler_logs": {
+                "Case": 0,
+                "Rows": "33",
+                "Size": "48KB",
+                "USize": 49152
+            },
+            "wp_cf7_vdata": {
+                "Case": 0,
+                "Rows": "12",
+                "Size": "16KB",
+                "USize": 16384
+            },
+            "wp_cf7_vdata_entry": {
+                "Case": 0,
+                "Rows": "82",
+                "Size": "16KB",
+                "USize": 16384
+            },
+            "wp_commentmeta": {
+                "Case": 0,
+                "Rows": "0",
+                "Size": "48KB",
+                "USize": 49152
+            },
+            "wp_comments": {
+                "Case": 0,
+                "Rows": "0",
+                "Size": "96KB",
+                "USize": 98304
+            },
+            "wp_duplicator_packages": {
+                "Case": 0,
+                "Rows": "0",
+                "Size": "32KB",
+                "USize": 32768
+            },
+            "wp_links": {
+                "Case": 0,
+                "Rows": "0",
+                "Size": "32KB",
+                "USize": 32768
+            },
+            "wp_options": {
+                "Case": 0,
+                "Rows": "231",
+                "Size": "1.09MB",
+                "USize": 1146880
+            },
+            "wp_postmeta": {
+                "Case": 0,
+                "Rows": "7,185",
+                "Size": "2.05MB",
+                "USize": 2146304
+            },
+            "wp_posts": {
+                "Case": 0,
+                "Rows": "234",
+                "Size": "1.58MB",
+                "USize": 1654784
+            },
+            "wp_term_relationships": {
+                "Case": 0,
+                "Rows": "36",
+                "Size": "32KB",
+                "USize": 32768
+            },
+            "wp_term_taxonomy": {
+                "Case": 0,
+                "Rows": "42",
+                "Size": "48KB",
+                "USize": 49152
+            },
+            "wp_termmeta": {
+                "Case": 0,
+                "Rows": "0",
+                "Size": "48KB",
+                "USize": 49152
+            },
+            "wp_terms": {
+                "Case": 0,
+                "Rows": "42",
+                "Size": "48KB",
+                "USize": 49152
+            },
+            "wp_usermeta": {
+                "Case": 0,
+                "Rows": "33",
+                "Size": "48KB",
+                "USize": 49152
+            },
+            "wp_users": {
+                "Case": 0,
+                "Rows": "0",
+                "Size": "64KB",
+                "USize": 65536
+            },
+            "wp_wfblockediplog": {
+                "Case": 0,
+                "Rows": "1,093",
+                "Size": "96KB",
+                "USize": 98304
+            },
+            "wp_wfblocks7": {
+                "Case": 0,
+                "Rows": "0",
+                "Size": "64KB",
+                "USize": 65536
+            },
+            "wp_wfconfig": {
+                "Case": 0,
+                "Rows": "257",
+                "Size": "480KB",
+                "USize": 491520
+            },
+            "wp_wfcrawlers": {
+                "Case": 0,
+                "Rows": "6",
+                "Size": "16KB",
+                "USize": 16384
+            },
+            "wp_wffilechanges": {
+                "Case": 0,
+                "Rows": "0",
+                "Size": "16KB",
+                "USize": 16384
+            },
+            "wp_wffilemods": {
+                "Case": 0,
+                "Rows": "4,142",
+                "Size": "1.52MB",
+                "USize": 1589248
+            },
+            "wp_wfhits": {
+                "Case": 0,
+                "Rows": "1,587",
+                "Size": "672KB",
+                "USize": 688128
+            },
+            "wp_wfhoover": {
+                "Case": 0,
+                "Rows": "822",
+                "Size": "144KB",
+                "USize": 147456
+            },
+            "wp_wfissues": {
+                "Case": 0,
+                "Rows": "0",
+                "Size": "80KB",
+                "USize": 81920
+            },
+            "wp_wfknownfilelist": {
+                "Case": 0,
+                "Rows": "4,352",
+                "Size": "416KB",
+                "USize": 425984
+            },
+            "wp_wflivetraffichuman": {
+                "Case": 0,
+                "Rows": "0",
+                "Size": "32KB",
+                "USize": 32768
+            },
+            "wp_wflocs": {
+                "Case": 0,
+                "Rows": "3",
+                "Size": "16KB",
+                "USize": 16384
+            },
+            "wp_wflogins": {
+                "Case": 0,
+                "Rows": "2,024",
+                "Size": "528KB",
+                "USize": 540672
+            },
+            "wp_wfls_2fa_secrets": {
+                "Case": 0,
+                "Rows": "0",
+                "Size": "32KB",
+                "USize": 32768
+            },
+            "wp_wfls_settings": {
+                "Case": 0,
+                "Rows": "19",
+                "Size": "16KB",
+                "USize": 16384
+            },
+            "wp_wfnotifications": {
+                "Case": 0,
+                "Rows": "2",
+                "Size": "16KB",
+                "USize": 16384
+            },
+            "wp_wfpendingissues": {
+                "Case": 0,
+                "Rows": "0",
+                "Size": "80KB",
+                "USize": 81920
+            },
+            "wp_wfreversecache": {
+                "Case": 0,
+                "Rows": "6",
+                "Size": "16KB",
+                "USize": 16384
+            },
+            "wp_wfsnipcache": {
+                "Case": 0,
+                "Rows": "0",
+                "Size": "64KB",
+                "USize": 65536
+            },
+            "wp_wfstatus": {
+                "Case": 0,
+                "Rows": "950",
+                "Size": "224KB",
+                "USize": 229376
+            },
+            "wp_wftrafficrates": {
+                "Case": 0,
+                "Rows": "0",
+                "Size": "16KB",
+                "USize": 16384
+            },
+            "wp_wpmailsmtp_tasks_meta": {
+                "Case": 0,
+                "Rows": "79",
+                "Size": "16KB",
+                "USize": 16384
+            }
+        },
+        "RawSize": 10436608
+    },
+    "LL": {
+        "TotalSize": "9.95MB",
+        "Status": {
+            "TotalSize": "Good"
+        }
+    }
+}
