@@ -97,7 +97,7 @@ get_header();
 
 				<div class="row">
 
-					<div class="col-xl-5 col-md-12 d-md-flex justify-content-md-center pr-0">
+					<div class="col-xl-5 col-md-12 d-md-flex justify-content-md-center pr-md-0 pl-md-2 pl-sm-0">
 
 						<picture>
                             <source 
@@ -116,10 +116,10 @@ get_header();
 					</div>
 
 					<div 
-					class="col-xl-6 col-lg-12 d-lg-flex justify-content-lg-center mt-5 mt-lg-0 px-0"
+					class="col-xl-6 col-lg-12 d-lg-flex justify-content-lg-center mt-xl-5 mt-sm-0 px-0"
 					data-aos="fade-up" data-aos-duration="1500">
 
-					<div class="mt-6 bg-folk--white pl-5 pr-3 pb-xl-0 pb-md-4">
+					<div class="mt-12 bg-folk--white pl-5 pr-3 pb-xl-0 pb-md-4">
 						<h2 class="color-folk--yellow-weak font-size-84 u-font-family-bronkz">HELLO,</h2>
 
 						<p>
@@ -131,11 +131,11 @@ get_header();
 						</p>
 
 						<div class="d-flex align-items-center flex-column">
-							<div class="col-9">
+							<div class="col-md-9 col-sm-12">
 								<a href="#" class="button-cta py-3 px-5 mt-4 d-block text-center">Learn more about me </a>
 							</div>
-							<div class="col-9">
-								<a href="#" class="button-cta button-cta--watch-my py-3 px-5 mt-4 d-block text-center">Watch my Tedx session today</a>
+							<div class="col-md-9 col-sm-12">
+								<a href="#" class="button-cta button-cta--watch-my py-3 px-md-5 px-sm-2 mt-4 d-block text-center">Watch my Tedx session today</a>
 							</div>
 						</div>
 					</div>
@@ -204,8 +204,14 @@ data-aos-delay="500">
 				<div class="row justify-content-center">
 
 					<div class="col-12 px-4 px-lg-5">
+						<!-- <span >
+							<= $post->post_content; ?>
+						</span> -->
+
+						<h2><?php echo get_field('titulo_my_mission') ?></h2>
+
 						<span class="post--text d-block font-weight--regular text-white">
-							<?= $post->post_content; ?>
+							<?php echo get_field('descricao_my_mission') ?>
 						</span>
 					</div>
 
@@ -252,7 +258,7 @@ data-aos-delay="500">
 		<div class="row">
 
 			<div class="col-12">
-				<h2 class="section-title mb-4 text-uppercase font-size-64 text-center color-folk--light-purple u-font-family-bronkz">
+				<h2 class="section-title mb-4 text-uppercase text-center color-folk--light-purple u-font-family-bronkz lg:u-font-size-121 md:u-font-size-98 sm:u-font-size-48">
 					Become Empowered, Today!
 				</h2>
 				<h3 class="color-folk--purple text-center font-size-57">
