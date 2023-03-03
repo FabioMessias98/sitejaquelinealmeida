@@ -1,0 +1,91 @@
+$layout-name: 'l-testimonials';
+
+.#{$layout-name} {
+    margin-left: 6%;    
+    background-image: url(../../images/testimonials-background.webp);
+    background-size: cover;
+    background-repeat: no-repeat;
+
+    &__swiper {
+        border-top-left-radius: 10px;
+        border-bottom-left-radius: 10px;
+    }
+
+    &__item {
+        padding: 1.5rem;
+        border-radius: 10px;
+        background-color: #470099;
+
+        &__header {
+            display: flex;
+        }
+
+        &__thumbnail {
+            width: 60px;
+            height: 60px;
+            border-radius: 50%;
+            overflow: hidden;
+
+            img {
+                width: 100%;
+                max-width: 100%;
+                height: 100%;
+                object-fit: cover;
+            }
+        }
+
+        &__name {
+            font-size: 1.375rem;
+            font-weight: 700;   
+            font-family: 'Bahnschrift', sans-serif;
+            color: $color-folk-white;
+        }
+
+        &__occupation {
+            line-height: 100%;
+            font-size: 1.25rem;
+            font-weight: 400;   
+            font-family: 'Bahnschrift', sans-serif;
+            color: $color-folk-white;
+        }
+
+        &__description {
+            line-height: 100%;
+            font-size: 1.375rem;
+            font-weight: 300;
+            font-family: 'Bahnschrift', sans-serif;
+            color: $color-folk-white;
+        }
+    }
+
+    &__title {
+        font-size: 6rem;
+        font-family: 'BROKENZ', sans-serif;
+        text-align: center;
+        text-transform: uppercase;
+        color: #E6D019;
+    }
+
+    &__button-pattern {
+        position: unset;
+
+        &::after {
+            font-size: 4rem;
+            font-weight: 700;
+            font-family: 'Font Awesome 5 Free';
+            color: $color-folk-white;
+        }
+    }
+
+    &__button-prev {
+        &::after {
+            content: '\f053';
+        }
+    }
+
+    &__button-next {
+        &::after {
+            content: '\f054';
+        }
+    }
+}

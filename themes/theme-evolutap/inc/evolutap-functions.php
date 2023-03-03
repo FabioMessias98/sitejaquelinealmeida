@@ -27,6 +27,7 @@ function evolutap_scripts()
 {
     wp_enqueue_style('evolutap-style', get_stylesheet_uri());
     wp_enqueue_style('evolutap-main-style', get_template_directory_uri() . '/assets/public/css/main.css');
+    wp_enqueue_style('evolutap-custom-style', get_template_directory_uri() . '/assets/public/css/custom.css');
 
     wp_enqueue_style('custom-style', get_template_directory_uri() . '/custom.css');
 
