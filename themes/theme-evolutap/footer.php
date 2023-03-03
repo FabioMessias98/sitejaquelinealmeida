@@ -107,9 +107,9 @@
 							placeholder="Email">
 						</div>
 
-						<div class="col-sm-10 mt-5">
+						<div class="col-xl-6 col-md-10	 mt-5">
 							<input
-							class="btn contact--submit text-white bg-folk--light-purple font-size-22 rounded-sm"
+							class="btn contact--submit text-white bg-folk--light-purple font-size-22 rounded-sm d-block w-100 p-3"
 							type="submit"
 							value="Subscribe">
 						</div>

@@ -658,7 +658,6 @@
 
 	&--submit {
 		line-height: 100%;
-    	padding: 1.2rem 15.8rem;
     	border-radius: 0;
 		transition: 700ms;
 
@@ -667,6 +666,10 @@
 		}
 
     	@media screen and (min-width: 1600px) {
+    		font-size: 1.23875rem;
+    	}
+
+    	@media screen and (min-width: 768px) {
     		font-size: 1.23875rem;
     	}
 
