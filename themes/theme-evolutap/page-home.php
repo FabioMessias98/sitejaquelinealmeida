@@ -119,7 +119,7 @@ get_header();
 					class="col-xl-6 col-lg-12 d-lg-flex justify-content-lg-center mt-xl-5 mt-sm-0 px-0"
 					data-aos="fade-up" data-aos-duration="1500">
 
-					<div class="mt-12 bg-folk--white pl-5 pr-3 pb-xl-0 pb-md-4">
+					<div class="mt-12 bg-folk--white pl-5 pr-3 pb-xl-0 pb-4">
 						<h2 class="color-folk--yellow-weak font-size-84 u-font-family-bronkz">HELLO,</h2>
 
 						<p>
@@ -197,6 +197,8 @@ data-aos-delay="500">
 			<style>	
 					.banner-jaque-fund {
 						background-image: url("<?php echo get_template_directory_uri() ?>/assets/public/images/banner-jaque-fundo.webp");
+						background-repeat: no-repeat;
+						background-size: cover;
 					}
 			</style>
 
@@ -835,10 +837,10 @@ data-aos-delay="500">
 	<div class="container">
 		<div class="row">
 			<div class="col-12">
-				<h2 class="font-size-84 color-folk--purple text-uppercase u-font-family-bronkz">Free Self Defence Tutorials</h2>
+				<h2 class="md:u-font-size-84 u-font-size-52 color-folk--purple text-uppercase u-font-family-bronkz">Free Self Defence Tutorials</h2>
 				<p class="lg:u-font-size-30 md:u-font-size-22 text-white">
-					Head over to my Youtube channel where you will find a variety of <br> 
-					tutorials to help you learn self defence techniques quickly and  <br>
+					Head over to my Youtube channel where you will find a variety of
+					tutorials to help you learn self defence techniques quickly and
 					efficiently, today.
 				</p>
 			</div>
@@ -873,7 +875,7 @@ data-aos-delay="500">
 	</div>
 
 	<div class="w-100 d-flex justify-content-center">
-		<div class="col-4">
+		<div class="col-md-4 col-8">
 			<a href="#" class="button-cta button-cta--watch-now py-3 px-2 d-block mt-11 font-size-22  text-center">Watch Now</a>
 		</div>
 	</div>

@@ -1505,6 +1505,10 @@
 
 .watch-now {
 	padding-left: 91px;
+	@media screen and (max-width: 576px) {
+		padding-left: 0px;
+	}
+
 }
 
 .swiper-defence-videos{

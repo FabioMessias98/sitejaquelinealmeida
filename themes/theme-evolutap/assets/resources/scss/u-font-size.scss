@@ -1,5 +1,25 @@
 $utility-name: 'u-font-size';
 
+
+.#{$utility-name}{
+    &-22{
+        font-size: 1.37rem !important; 
+    }
+    &-32{
+        font-size: 2rem !important; 
+    }
+    &-52 {
+        font-size: 3.25rem !important; 
+    }
+    &-60 {
+        font-size: 3.75rem !important; 
+    }
+    &-70 {
+        font-size: 4.37rem !important; 
+    }
+}
+
+
 //query sm
 .sm\: {
     &#{$utility-name} {
@@ -74,6 +94,19 @@ $utility-name: 'u-font-size';
                 font-size: 1.125rem !important;
             }
         }
+
+        &-32 {
+            @media screen and (min-width: 576px) {
+                font-size: 2.1rem !important;
+            }
+        }
+
+        &-52 {
+            @media screen and (min-width: 576px) {
+                font-size: 3.25rem !important;
+            }
+        }
+
         &-75 {
             @media screen and (min-width: 576px) {
                 font-size: 4.68rem !important;
@@ -161,9 +194,29 @@ $utility-name: 'u-font-size';
                 font-size: 1.3rem !important;
             }
         }
+        &-45 {
+            @media screen and (min-width: 768px) {
+                font-size: 2.81rem !important;
+            }
+        }
+        &-75 {
+            @media screen and (min-width: 768px) {
+                font-size: 4.68rem !important;
+            }
+        }
+        &-84 {
+            @media screen and (min-width: 768px) {
+                font-size: 5.25rem !important;
+            }
+        }
         &-98 {
             @media screen and (min-width: 768px) {
                 font-size: 6.125rem !important;
+            }
+        }
+        &-100 {
+            @media screen and (min-width: 768px) {
+                font-size: 6.25rem !important;
             }
         }
         &-161 {
@@ -267,6 +320,11 @@ $utility-name: 'u-font-size';
         &-121 {
             @media screen and (min-width: 992px) {
                 font-size: 7.56rem !important;
+            }
+        }
+        &-130 {
+            @media screen and (min-width: 992px) {
+                font-size: 8.12rem !important;
             }
         }
     }    

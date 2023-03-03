@@ -38,11 +38,11 @@
 
 			<div class="col-12">
 
-				<h2 class="section-title color-folk--light-purple text-center text-uppercase u-font-family-bronkz">
+				<h2 class="lg:u-font-size-130 md:u-font-size-100 u-font-size-70 color-folk--light-purple text-center text-uppercase u-font-family-bronkz">
 					Social Media
 				</h2>
 
-				<ul class="d-flex justify-content-between justify-content-md-center my-5 px-4 px-md-0">
+				<ul class="d-flex justify-content-between justify-content-md-center my-md-5 my-3 px-4 px-md-0">
 					<li class="justify-content-center list-style-none my-3 mx-3 mx-sm-0 d-none">
 						<div class="sidebar-social--icons mb-0" data-social="instagram">
 							<li class="u-list-style-none mx-2">
@@ -53,33 +53,6 @@
 							</li>
 						</div>
 					</li>
-
-                   
-                    <!-- <li 
-                    class="d-flex justify-content-center list-style-none mt-3"
-                    data-aos="flip-down">
-                        <a
-                        class="social-media--icons"
-                        href="#"
-                        rel="noopener noreferrer"
-                        target="_blank">
-                            <picture>
-
-                                <source 
-                                srcset="<= get_template_directory_uri() ?>/assets/public/images/icon-linkedin-large.webp" 
-                                type="image/webp">
-                                
-                                <source 
-                                srcset="<= get_template_directory_uri() ?>/assets/public/images/icon-linkedin-large.png" 
-                                type="image/png">
-                                
-                                <img 
-                                class="social-media--img m-auto d-block"
-                                src="<= get_template_directory_uri() ?>/assets/public/images/icon-linkedin-large.png" 
-                                alt="Jaque - Linkedin">
-                            </picture>
-                        </a>
-                    </li> -->
                 </ul>
 			</div>
 		</div>
@@ -96,7 +69,7 @@
 			
 			<div class="col-12">
 
-				<h2 class="section-title line-height-100 mb-0 text-uppercase color-folk--yellow-weak xl:u-font-size-160 lg:u-font-size-105 u-font-family-bronkz">
+				<h2 class="line-height-100 mb-0 text-uppercase color-folk--yellow-weak xl:u-font-size-160 lg:u-font-size-105 md:u-font-size-75 u-font-size-60 u-font-family-bronkz">
 					Be the First to Know
 				</h2>
 
@@ -108,15 +81,15 @@
 
 					<div class="form-row flex-column">
 						
-						<div class="d-flex">
-							<div class="col-xl-3 col-lg-5 mt-2 pl-1">
+						<div class="d-flex flex-md-row flex-column">
+							<div class="col-xl-3 col-md-5 col-12 mt-2 pl-1">
 								<input
-								class="contact--input form-control border-0 rounded-0 box-shadow-folk pl-4"
+								class="contact--input form-control border-0 rounded-0 box-shadow-folk pl-4 mb-lg-0 mb-3"
 								type="text"
 								id="firstName"
 								placeholder="First Name">
 							</div>
-							<div class="col-xl-3 col-lg-5 mt-2 px-1">
+							<div class="col-xl-3 col-md-5 col-12 mt-2 px-md-1 pl-1">
 								<input
 								class="contact--input form-control border-0 rounded-0 box-shadow-folk pl-4"
 								type="text"
@@ -125,7 +98,7 @@
 							</div>
 						</div>
 
-						<div class="col-xl-6 col-lg-10 mt-4">
+						<div class="col-xl-6 col-md-10 col-12 mt-4 px-md-1 pr-3">
 
 							<input 
 							class="contact--input form-control border-0 rounded-0 box-shadow-folk pl-4"
