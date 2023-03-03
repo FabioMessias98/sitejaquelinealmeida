@@ -1,15 +1,16 @@
 <?php
 
-// function social_media_init() {
-//     $args = array(
-//         'public' => true,
-//         'label'  => 'Social Media',
-//         'show_in_rest'       => true, 
-//         'menu_icon'           => 'dashicons-share'
-//     );
-//     register_post_type('social_media', $args );
-// }
-// add_action( 'init', 'social_media_init' );
+function testimonials_init() {
+    $args = array(
+        'public'       => true,
+        'label'        => 'Testimonials',
+        'show_in_rest' => true,
+        'supports'     => array('title', 'thumbnail'), 
+        'menu_icon'    => 'dashicons-testimonial'
+    );
+    register_post_type('testimonials', $args );
+}
+add_action( 'init', 'testimonials_init' );
 
 function products_channel_init() {
     $args = array(

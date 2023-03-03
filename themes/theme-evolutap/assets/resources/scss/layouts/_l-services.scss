@@ -1,0 +1,95 @@
+$layout-name: 'l-services';
+
+.#{$layout-name} {
+    margin-left: 6%;
+    background-color: #F0F0F0;
+    
+    &__title {
+        font-size: 7.5rem;
+        font-family: 'BROKENZ', sans-serif;
+        text-transform: uppercase;
+        color: $color-folk-light-purple;
+    }
+
+    &__card {
+        border-radius: 1rem;
+
+        &__title {
+            font-size: 2rem;
+            font-weight: 700;
+                font-family: 'Bahnschrift', sans-serif;
+                color: $color-folk-purple;
+        }
+    
+        &__text {
+            line-height: 100%;
+            font-size: 1.375rem;
+            color: $color-folk-purple;
+        }
+    
+        &__buy-now {
+            width: 100%;
+            height: 100%;
+            line-height: 100%;
+            border-radius: .5rem;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 2rem;
+            font-weight: 400;
+            font-family: 'Bahnschrift', sans-serif;
+            text-align: center;
+            color: $color-folk-white !important;
+            background-color: #FC2CD3;
+    
+            &:hover {
+                background-color: $color-folk-purple;
+            }
+        }
+
+        &__price {
+            line-height: 100%;
+            font-size: 3.5rem;
+            font-weight: 700;
+            font-family: 'Bahnschrift', sans-serif;
+            color: $color-folk-purple;
+        }
+    }
+
+    &__button-pattern {
+        top: 50%;
+        transform: translateY(-50%);
+
+        &::after {
+            font-weight: 700;
+            font-family: 'Font Awesome 5 Free';
+            color: #FC2CD3;
+        }
+
+        &:hover {
+            &::after {
+                color: $color-folk-purple;
+            }
+        }
+
+        &.swiper-button-disabled {
+            display: none;
+        }
+    }
+
+    &__button-prev {
+        left: -3rem;
+
+        &::after {
+            content: '\f053';
+        }
+    }
+
+    &__button-next {
+        right: -3rem;
+
+        &::after {
+            content: '\f054';
+        }
+    }
+}
