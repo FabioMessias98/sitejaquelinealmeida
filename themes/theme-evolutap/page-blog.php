@@ -34,7 +34,7 @@ get_header();
 
                 <div class="col-12 px-0">
 
-                	<div class="header--box position-relative overlay--black pl-0">
+                	<div class="header--box overlay--black pl-0">
 
 	                    <picture>
 	                        <source 
@@ -51,9 +51,8 @@ get_header();
 	                        alt="Ícone Hamburger">
 	                    </picture>
 
-	                    <div class="header--box-content" style="margin: 0; left: 16%;">
-	                		<h1 
-	                		class="header--title text-center text-uppercase color-folk--yellow-weak font-size-250 u-font-family-bronkz"
+	                    <div class="header--box-content d-flex justify-content-start pl-5 mt-0">
+	                		<h1 class="text-center text-uppercase color-folk--yellow-weak lg:u-font-size-220 md:u-font-size-161 u-font-size-120 u-font-family-bronkz aos-init aos-animate"
 	                		data-aos="zoom-out">
 							Blog	
 	                		</h1>
@@ -82,7 +81,7 @@ get_header();
 			if ($blogs->have_posts()):
 				while($blogs->have_posts()): $blogs->the_post();
 			?>
-			<div class="col-4 mb-6">
+			<div class="col-lg-4 col-md-6 col-12 mb-6">
 				<div class="bg-folk--white d-flex justify-content-between flex-column h-100">
 					<div>
 						<div class="position-relative">
@@ -131,7 +130,7 @@ get_header();
 			if(have_rows('videos_blog', 'option')):
 				while(have_rows('videos_blog', 'option')): the_row();
 			?>
-			<div class="col-4">
+			<div class="col-lg-4 col-md-6 col-12">
 				<div class="position-relative">
 					<img class="img-fluid" src="<?php echo get_sub_field( 'link_video_blog' ) ?>" alt="<?php echo get_sub_field( 'titulo_video_blog' ) ?>deo">
 					<h2 class="text-white" style="position: absolute; left: 16px; bottom: 8px;"> 
@@ -162,31 +161,31 @@ get_header();
 
 <section class="principais-videos bg-folk--white py-7">
 	<div class="container d-flex justify-content-center">
-		<div class="row">
-			<div class="col-6">
+		<div class="row justify-content-center">
+			<div class="col-lg-6 col-md-8 col-12">
 				<div>
 					<img class="img-fluid rounded-lg" width="450px" src="<?= get_template_directory_uri() ?>/assets/public/images/imagem-shop-now.png" alt="imagem fundo">
 				</div>
 
 				<div class="px-3 position-relative">
-					<div class="col-6 py-0" style="position: absolute; bottom: 47px; left: 47px;">
+					<div class="col-lg-6 col-8 py-0" style="position: absolute; bottom: 47px; left: 47px;">
 						<a href="#" class="button-cta button-cta--view-all py-3 px-3 d-flex justify-content-between align-items-center font-size-22 mb-n4">Shop Now
 							<i class="far fa-chevron-right u-font-weight-black pr-3 font-size-30"></i>
 						</a>
 					</div>
 				</div>
 			</div>
-			<div class="col-6">
+			<div class="col-lg-6 col-md-8 col-12 mt-lg-0 mt-5">
 				<div class="position-relative">
 					<img class="img-fluid rounded-lg" width="450px" src="<?= get_template_directory_uri() ?>/assets/public/images/image-express.png" alt="imagem fundo">
-					<h2 class="u-font-family-bronkz font-size-64 color-folk--light-purple" style="position: absolute; top: 20px; left: 20px;">Learn to express <br>
+					<h2 class="u-font-family-bronkz lg:u-font-size-64 md:u-font-size-50 u-font-size-45 color-folk--light-purple text-uppercase" style="position: absolute; top: 20px; left: 20px;">Learn to express <br>
 						your confidence <br>
 						through the programs
 					</h2>
 				</div>
 
 				<div class="px-3 position-relative">
-					<div class="col-6 px-0" style="position: absolute; bottom: 47px; left: 47px;">
+					<div class="col-lg-6 col-8 px-0" style="position: absolute; bottom: 47px; left: 47px;">
 						<a href="#" class="button-cta button-cta--view-all py-3 px-3 d-flex justify-content-between align-items-center font-size-22 mb-n4">Learn More
 							<i class="far fa-chevron-right u-font-weight-black pr-3 font-size-30"></i>
 						</a>
