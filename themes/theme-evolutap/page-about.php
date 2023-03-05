@@ -54,7 +54,7 @@ get_header();
 
 	                    <div class="header--box-content">
 	                		<h1 
-	                		class="header--title text-center text-uppercase color-folk--yellow-weak font-size-160 u-font-family-bronkz"
+	                		class="header--title text-center text-uppercase color-folk--yellow-weak md:u-font-size-161 u-font-size-100 u-font-family-bronkz"
 	                		data-aos="zoom-out">
 	                			About Me
 	                		</h1>
@@ -68,10 +68,10 @@ get_header();
 <!-- end banner social -->
 
 <!-- submenu -->
-<div class="submenu d-md-none align-items-center mt-4 mt-md-0 mb-5 my-md-0">
+<!-- <div class="submenu d-none align-items-center mt-4 mt-md-0 mb-5 my-md-0">
 
 	<?= do_shortcode('[dcms_childpages]'); ?>
-</div>
+</div> -->
 <!-- end submenu -->
 
 <!-- about -->
@@ -89,7 +89,7 @@ get_header();
 	
 							<div class="mt-6 pb-3 bg-folk--white pr-3">
 
-									<h1 class="text-center color-folk--yellow-weak font-size-100 u-font-family-bronkz" data-aos="zoom-out">
+									<h1 class="text-center color-folk--yellow-weak xl:u-font-size-100 lg:u-font-size-64 md:u-font-size-58 u-font-family-bronkz" data-aos="zoom-out">
 										Hi, I’m Coach Jaqueline Almeida.
 									</h1>
 								<p class="ml-3 font-size-20" data-aos="fade-up" data-aos-duration="1500">
@@ -118,7 +118,7 @@ get_header();
 								</p>
 
 									<div class="d-flex justify-content-center">
-										<div class="col-5">
+										<div class="col-md-5 col-md-7 col-12">
 											<a href="#" class="button-cta button-cta--watch-my py-3 px-5 my-4 d-block text-center">Watch my TedX Talk</a>
 										</div>
 									</div>
@@ -139,15 +139,15 @@ get_header();
 <section class="py-5 bg-folk--gray" style="margin-left: 6%;">
 	<div class="container bg-folk--pink rounded-left py-4 px-6 position-relative">	
 		<div class="d-flex">
-			<h2 class="color-folk--yellow-weak u-font-family-bronkz font-size-84 text-uppercase ">be part of our female <br>
+			<h2 class="color-folk--yellow-weak u-font-family-bronkz md:u-font-size-84 u-font-size-52 text-uppercase ">be part of our female <br>
 				empowerment community
 			</h2>
-			<img  style="position: absolute; bottom: 25px; right: 156px; " class="mx-3" src="<?= get_template_directory_uri() ?>/assets/public/images/group-jaque.png" alt="equipe jaque" loading="lazy" decoding="async">
+			<img  style="position: absolute; bottom: 25px; right: 156px; " class="mx-3 d-xl-flex d-none" src="<?= get_template_directory_uri() ?>/assets/public/images/group-jaque.png" alt="equipe jaque" loading="lazy" decoding="async">
 		</div>
 
 		<div>
-			<div class="col-3" >
-				<a href="#" class="button-cta button-cta--join-now py-3 px-5 my-4 d-block text-center">Join Now</a>
+			<div class="col-lg-3 col-md-7 col-12" >
+				<a href="#" class="button-cta button-cta--join-now py-3 px-md-5 px-3 my-4 d-block text-center">Join Now</a>
 			</div>
 		</div>
 	</div>

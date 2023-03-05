@@ -20,6 +20,9 @@ $utility-name: 'u-font-size';
     &-70 {
         font-size: 4.37rem !important; 
     }
+    &-100 {
+        font-size: 6.25rem !important; 
+    }
     &-120 {
         font-size: 7.5rem !important; 
     }
@@ -208,6 +211,11 @@ $utility-name: 'u-font-size';
         &-50 {
             @media screen and (min-width: 768px) {
                 font-size: 3.12rem !important;
+            }
+        }
+        &-58 {
+            @media screen and (min-width: 768px) {
+                font-size: 3.62rem !important;
             }
         }
         &-75 {
@@ -423,6 +431,11 @@ $utility-name: 'u-font-size';
         &-18 {
             @media screen and (min-width: 1200px) {
                 font-size: 1.125rem !important;
+            }
+        }
+        &-100 {
+            @media screen and (min-width: 1200px) {
+                font-size: 6.25rem !important;
             }
         }
         &-160 {

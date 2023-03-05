@@ -64,7 +64,7 @@ get_header();
     </div><!-- row -->
 </section>
 
-<section class="blog mb-5 bg-folk--gray">
+<section class="blog mb-5 bg-folk--gray py-8">
 	<div class="container">
 		<h2 class="color-folk--light-purple u-font-family-bronkz text-uppercase font-size-100 py-3">blog</h2>
 		<div class="row">
