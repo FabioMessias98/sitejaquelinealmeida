@@ -20,125 +20,278 @@ get_header();
 
 <?php while ( have_posts() ) : the_post(); ?>
 
-<section class="collections my-4 mb-5">
+<!-- banner social -->
+<div class="container-fluid">
 
-	<div class="container">
+    <div class="row">
+		
+		<!-- sidebar social -->    
+        <?= get_template_part('template-parts/content-sidebar-social') ?>
+        <!-- end sidebar social -->
 
-		<div class="row">
+        <div class="header--col d-none d-md-block">
+        </div>
 
-			<div class="col-12">
+        <div class="col-sm order-1 order-md-2">
 
-				<h1>
-					<?php echo $post->post_title; ?>
-				</h1>
+            <div class="row">
 
-				<div class="row justify-content-center">
+                <div class="col-12 px-0">
 
-					<!-- loop -->
-					<?php $args = array(
-							'posts_per_page' => -1,
-							'post_type'      => 'products',
-							'category_name'  => 'collections-product',
-							'order'          => 'DESC',
-						);
+                	<div class="header--box position-relative overlay--black pl-0">
 
-						$sales = new WP_Query( $args );
+	                    <picture>
+	                        <source 
+	                        srcset="<?= get_template_directory_uri() ?>/assets/public/images/banner-product.webp" 
+	                        type="image/webp" loading="lazy" decoding="async">
+	                        
+	                        <source 
+	                        srcset="<?= get_template_directory_uri() ?>/assets/public/images/banner-product.png" 
+	                        type="image/png">
+	                        
+	                        <img 
+	                        class="header--banner"
+	                        src="<?= get_template_directory_uri() ?>/assets/public/images/img-banner-product.png" 
+	                        alt="Banner product">
+	                    </picture>
 
-						if( $sales->have_posts() ) : 
-	                    	while( $sales->have_posts() ): $sales->the_post();
-					?>
-								<div class="col-md-4 my-3 my-md-0">
+	                    <div class="header--box-content mt-lg-0 xl-mt-10">
+	                		<h1 
+	                		class="header--title text-center color-folk--yellow-weak md:u-font-size-161 sm:u-font-size-75 u-font-family-bronkz"
+	                		data-aos="zoom-out">
+	                			JAQUE ALMEIDA
+	                		</h1>
+                		</div>
+                	</div>
+                </div>
+            </div><!-- row -->
+        </div><!-- col -->
+    </div><!-- row -->
+</div>
+<!-- end banner social -->
 
-									<div class="card border-0 shadow">
+<!-- courses -->
+<section class="l-products py-5">
 
-										<div class="card-img p-3">
+    <div class="container mb-5">
 
-											<?php if( get_field( 'enable_gallery' ) == 'No' ) : ?>
-												<?php
-													$altTitle = get_the_title();
-													the_post_thumbnail('post-thumbnail', 
-														array(
-															'class' => 'img-fluid blog--post-img',
-															'alt'   => $altTitle,
-													));
-												?>
-											<?php else: ?>
-												<!-- swiper -->
-												<div class="swiper-container swiper-container-collections">
+        <div class="row justify-content-center">
 
-													<div class="swiper-wrapper">
+            <div class="col-11 my-5">
 
-														<!-- slide -->
-														<?php if( have_rows( 'gallery' ) ) : 
-																while( have_rows( 'gallery' ) ) : the_row(); 
-														?>
-																	<div class="swiper-slide">
-																		<img
-																		class="img-fluid"
-																		src="<?php echo get_sub_field( 'photo' ) ?>"
-																		alt="<?php the_title() ?>">
-																	</div>
-														<?php endwhile; 
-															endif; 
-														?>
-														<!-- end slide -->
-													</div>
+                <h3 class="l-products__title">
+                    Courses
+                </h3>
 
-													<!-- arrows -->
-													<div class="swiper-button-next swiper-button-next-collections"></div>
-													<div class="swiper-button-prev swiper-button-prev-collections"></div>
 
-													<!-- pagination -->
-													<div class="swiper-pagination swiper-pagination-collections"></div>
-												</div>
-												<!-- end swiper -->
-											<?php endif; ?>
+                <!-- swiper -->
+                <div class="position-relative">
+                    <div class="swiper-container js-swiper-courses">
 
-											<span class="collections__view"></span>
-										</div>
+                        <div class="swiper-wrapper">
 
-										<div class="card-body d-flex flex-column align-items-center pt-0">
-											<p class="collections__product-title text-center color-folk--yellow mb-1">
-												<!-- Chill Crew in Mint -->
-												<?php the_title() ?>
-											</p>
+                            <!-- slide -->
+                            <?php 
+                                $args = array(
+                                    'posts_per_page' => -1,
+                                    'post_type'      => 'course',
+                                    'order'          => 'DESC'
+                                );
 
-											<p class="collections__product-price text-center color-folk--yellow">
-												€<?php echo get_field( 'price' ) ?>
-											</p>
+                                $courses = new WP_Query( $args );
 
-											<div class="row mb-3">
-												<?php if( have_rows( 'sizes' ) ) : 
-														while( have_rows( 'sizes' ) ) : the_row();
-												?>
-															<a
-	class="collections__size <?php echo get_sub_field( 'link' ) == true ? 'active' : 'disable'; ?>"
-															href="<?php echo get_sub_field( 'link' ) ?>">
-																<?php echo get_sub_field( 'size' ) ?>
-															</a>
-												<?php 	endwhile; 
-													endif;
-												?>
-											</div>
+                                if( $courses->have_posts() ) :
+                                    while( $courses->have_posts() ) : $courses->the_post();
+                            ?>
+                                        <div class="swiper-slide">
 
-											<a
-											class="collections__btn-buy bg-folk--yellow d-none"
-											href="<?php echo get_field( 'buy' ) ?>"
-											target="">
-												buy
-											</a>
-										</div>
-									</div>
-								</div>
-					<?php endwhile; 
-						endif; 
-					?>
-					<!-- end loop -->
-				</div>
-			</div>
-		</div>
-	</div>
+                                            <a 
+                                            class="l-products__card card border-0 text-decoration-none" 
+                                            href="<?php echo get_field( 'buy_now' ) ?>"
+                                            target="_blank"
+                                            rel="noreferrer noopener">
+
+                                                <div class="card-img">
+                                                    <!-- <img 
+                                                    class="img-fluid w-100"
+                                                    src="<php echo get_template_directory_uri()?>/assets/public/images/service-image.webp" 
+                                                    alt="Curso 1" /> -->
+
+                                                    <?php
+                                                        the_post_thumbnail('post-thumbnail',
+                                                            array(
+                                                                'class' => 'img-fluid w-100',
+                                                                'alt'   => get_the_title()
+                                                            )
+                                                        );
+                                                    ?>
+                                                </div>
+
+                                                <div class="card-body pt-4">
+
+                                                    <h3 class="l-products__card__title mb-4">
+                                                        <!-- Beginnings
+                                                        Self Defence -->
+                                                        <?php the_title() ?>
+                                                    </h3>
+
+                                                    <span class="l-products__card__text d-block mb-4">
+                                                        <!-- Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor -->
+                                                        <?php echo get_field( 'description') ?>
+                                                    </span>
+
+                                                    <div class="row">
+
+                                                        <div class="col-6">
+
+                                                            <div class="row">
+
+                                                                <div class="col-12">
+                                                                    <p class="l-products__card__buy-now py-1">
+                                                                        Buy now
+                                                                    </p>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+
+                                                        <div class="col-6 d-flex justify-content-center align-items-center">
+                                                            <p class="l-products__card__price mb-0">
+                                                                <!-- $99 -->
+                                                                <?php echo '$' . get_field( 'price' ) ?>
+                                                            </p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </a>
+                                        </div>
+                            <?php 
+                                    endwhile;
+                                endif;
+                                
+                                wp_reset_query();
+                            ?>
+                            <!-- end slide -->
+                        </div>
+                    </div>
+
+                    <!-- arrows -->
+                    <div class="swiper-button-prev l-products__button-pattern l-products__button-prev js-swiper-button-prev-courses"></div>
+                    <div class="swiper-button-next l-products__button-pattern l-products__button-next js-swiper-button-next-courses"></div>
+                </div>
+                <!-- end swiper -->
+            </div>
+
+            <div class="col-11 my-5">
+
+                <h3 class="l-products__title">
+                    Products
+                </h3>
+
+                <!-- swiper -->
+                <div class="position-relative">
+                    <div class="swiper-container js-swiper-products">
+
+                        <div class="swiper-wrapper">
+
+                            <!-- slide -->
+                            <?php 
+                                $args = array(
+                                    'posts_per_page' => -1,
+                                    'post_type'      => 'product',
+                                    'order'          => 'DESC'
+                                );
+
+                                $products = new WP_Query( $args );
+
+                                if( $products->have_posts() ) :
+                                    while( $products->have_posts() ) : $products->the_post();
+                            ?>
+                                        <div class="swiper-slide">
+
+                                            <a 
+                                            class="l-products__card card border-0 text-decoration-none" 
+                                            href="<?php echo get_field( 'buy_now' ) ?>"
+                                            target="_blank"
+                                            rel="noreferrer noopener">
+
+                                                <div class="card-img">
+                                                    <!-- <img 
+                                                    class="img-fluid w-100"
+                                                    src="<php echo get_template_directory_uri()?>/assets/public/images/service-image.webp" 
+                                                    alt="Curso 1" /> -->
+
+                                                    <?php
+                                                        the_post_thumbnail('post-thumbnail',
+                                                            array(
+                                                                'class' => 'img-fluid w-100',
+                                                                'style' => 'height:514px',
+                                                                'alt'   => get_the_title()
+                                                            )
+                                                        );
+                                                    ?>
+                                                </div>
+
+                                                <div class="card-body pt-4">
+
+                                                    <h3 class="l-products__card__title mb-4">
+                                                        <!-- Beginnings
+                                                        Self Defence -->
+                                                        <?php the_title() ?>
+                                                    </h3>
+
+                                                    <span class="l-products__card__text d-block mb-4">
+                                                        <!-- Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor -->
+                                                        <?php echo get_field( 'description') ?>
+                                                    </span>
+
+                                                    <div class="row">
+
+                                                        <div class="col-6">
+
+                                                            <div class="row">
+
+                                                                <div class="col-12">
+                                                                    <p class="l-products__card__buy-now py-1">
+                                                                        Buy now
+                                                                    </p>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+
+                                                        <div class="col-6 d-flex justify-content-center align-items-center">
+                                                            <p class="l-products__card__price mb-0">
+                                                                <!-- $99 -->
+                                                                <?php echo '$' . get_field( 'price' ) ?>
+                                                            </p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </a>
+                                        </div>
+                            <?php 
+                                    endwhile;
+                                endif;
+                                
+                                wp_reset_query();
+                            ?>
+                            <!-- end slide -->
+                        </div>
+                    </div>
+
+                    <!-- arrows -->
+                    <div class="swiper-button-prev l-products__button-pattern l-products__button-prev js-swiper-button-prev-products"></div>
+                    <div class="swiper-button-next l-products__button-pattern l-products__button-next js-swiper-button-next-products"></div>
+                </div>
+                <!-- end swiper -->
+            </div>
+        </div>
+    </div>
 </section>
+<!-- end courses -->
+
+<!-- testimonials -->
+<?php echo get_template_part( 'template-parts/content', 'testimonials' ); ?>
+<!-- end testimonials -->
 
 <?php endwhile; ?>
 
@@ -146,5 +299,5 @@ get_header();
 </div><!-- #primary -->
 
 <?php
-//get_sidebar();
+
 get_footer();

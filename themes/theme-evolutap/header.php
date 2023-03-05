@@ -55,7 +55,7 @@
     <div id="page" class="site">
         <a class="skip-link screen-reader-text d-none" href="#content"><?php esc_html_e('Skip to content', 'valente'); ?></a>
 
-        <header id="masthead" class=" header position-relative py-3 site-header navbar-static-top bg-folk--black" role="banner">
+        <header id="masthead" class="l-header header py-3 site-header navbar-static-top bg-folk--black" role="banner">
                     
             <div class="header--col bg-folk--white">
             </div>

@@ -1,5 +1,31 @@
 <?php
 
+function course_init() {
+    $args = array(
+        'public'       => true,
+        'label'        => 'Courses',
+        'show_in_rest' => true,
+        'supports'     => array('title', 'thumbnail'), 
+        'menu_icon'    => 'dashicons-products'
+    );
+    
+    register_post_type('course', $args );
+}
+add_action( 'init', 'course_init' );
+
+function product_init() {
+    $args = array(
+        'public'       => true,
+        'label'        => 'Products',
+        'show_in_rest' => true,
+        'supports'     => array('title', 'thumbnail'), 
+        'menu_icon'    => 'dashicons-products'
+    );
+    
+    register_post_type('product', $args );
+}
+add_action( 'init', 'product_init' );
+
 function testimonials_init() {
     $args = array(
         'public'       => true,
@@ -15,7 +41,7 @@ add_action( 'init', 'testimonials_init' );
 function products_channel_init() {
     $args = array(
         'public' => true,
-        'label'  => 'Products',
+        'label'  => 'Products Backup',
         'show_in_rest'       => true, 
         'menu_icon'           => 'dashicons',
         'menu_icon'           => 'dashicons-products',
@@ -48,42 +74,6 @@ function story_init() {
 }
 add_action( 'init', 'story_init' );
 
-// function Produtos_init() {
-//     $args = array(
-//         'public' => true,
-//         'label'  => 'Produtos',
-//         'publicly_queryable' => true,
-//         'show_ui' => true,
-//         'query_var' => true,
-//         'show_in_rest' => true,
-//         'menu_icon'           => 'dashicons-admin-users',
-//         'capability_type' => 'post',
-//         'hierarchical' => false,
-//         'supports' => array('title')
-//     );
-//     register_post_type('Produtos', $args );
-// }
-// add_action( 'init', 'Produtos_init' );
-
-// function create_produtos_taxonomies() {
-
-//     $args = array(
-//         'hierarchical'      => true, 
-//         'labels'            => array('name' => 'Marcas'),
-//         'show_ui'           => true,
-//         'show_admin_column' => true,
-//         'query_var'         => true,
-//         'show_in_rest' => true,
-//         'rest_base'          => 'marcas_categories',
-//         'rest_controller_class' => 'WP_REST_Terms_Controller', 
-//         'rewrite'           => array( 'slug' => 'marcas_categories' ),
-//         'default_term' => 'gore'
-//     );
-
-//     register_taxonomy( 'marcas_categories', array( 'produtos' ), $args );
-// }
-// add_action( 'init', 'create_produtos_taxonomies', 0 );
-
 function create_produtos_2_taxonomies() {
 
     $args = array(
@@ -101,46 +91,6 @@ function create_produtos_2_taxonomies() {
     register_taxonomy( 'utilizacao_categories', array( 'produtos' ), $args );
 }
 add_action( 'init', 'create_produtos_2_taxonomies', 0 );
-
-
-// function novidades_init() {
-//     $args = array(
-//         'public' => true,
-//         'label'  => 'Novidades',
-//         'show_in_rest'       => true, 
-//         'menu_icon'           => 'dashicons-admin-users'
-//     );
-//     register_post_type('Novidades', $args );
-// }
-// add_action( 'init', 'novidades_init' );
-
-// function videos_conceitos_register() {
-//     $args = array(
-//         'labels' => array('name' => 'Vídeos Conceitos'),
-      
-//         'menu_icon'    => 'dashicons-format-status', 
-//         'rewrite' => array('slug' => 'videos_conceitos'),
-
-//     ); 
-//     register_post_type( 'videos_conceitos' , $args );
-// }
-// add_action('init', 'videos_conceitos_register');
-// function equipe_init() {
-//     $args = array(
-//         'public' => true,
-//         'label'  => 'Equipe',
-//         'publicly_queryable' => true,
-//         'show_ui' => true,
-//         'query_var' => true,
-//         'show_in_rest' => true,
-//         'menu_icon'           => 'dashicons-admin-users',
-//         'capability_type' => 'post',
-//         'hierarchical' => false,
-//         'supports' => array('title')
-//     );
-//     register_post_type('equipe', $args );
-// }
-// add_action( 'init', 'equipe_init' );
 
 function create_times_taxonomies() {
 
@@ -203,4 +153,19 @@ function dcms_list_child_pages() {
 }
 
 add_shortcode('dcms_childpages', 'dcms_list_child_pages');
+
+// function create_taxonomy() {
+//     register_taxonomy( 
+//         'products_courses_category', 
+//         'products-courses', 
+//         array( 
+//             'labels' => array( 
+//                 'name'          => 'Categorias', 
+//                 'singular_name' => 'Categoria' 
+//             ), 
+//         'hierarchical'      => true, 
+//         'show_admin_column' => true 
+//     ));
+// }
+// add_action( 'init', 'create_taxonomy' );
 

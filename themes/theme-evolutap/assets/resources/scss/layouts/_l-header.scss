@@ -1,5 +1,23 @@
 $layout-name: 'l-header';
 
 .#{$layout-name} {
-    
+    width: 100%;
+    top: 0;
+    left: 0;
+    position: absolute;
+    background: none !important;
+    z-index: 999;
+
+    .nav-item {
+        margin: 0 3rem;
+    }
+
+    .nav-link {
+        padding-left: 2rem;
+        padding-right: 2rem;    
+        font-size: 1.75rem;
+        font-weight: 100;
+        font-family: 'Bahnschrift'; 
+        text-transform: capitalize;
+    }
 }
