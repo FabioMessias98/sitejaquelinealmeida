@@ -837,12 +837,10 @@ data-aos-delay="500">
 	<div class="container">
 		<div class="row">
 			<div class="col-12">
-				<h2 class="md:u-font-size-84 u-font-size-52 color-folk--purple text-uppercase u-font-family-bronkz">Free Self Defence Tutorials</h2>
-				<p class="lg:u-font-size-30 md:u-font-size-22 text-white">
-					Head over to my Youtube channel where you will find a variety of
-					tutorials to help you learn self defence techniques quickly and
-					efficiently, today.
-				</p>
+				<h2 class="md:u-font-size-84 u-font-size-52 color-folk--purple text-uppercase u-font-family-bronkz"><?php echo get_field('titulo_self_defence') ?></h2>
+				<span class="lg:u-font-size-30 md:u-font-size-22 text-white">
+					<?php echo get_field('descricao_self_defence') ?>
+				</span>
 			</div>
 		</div>
 	</div>
@@ -850,10 +848,23 @@ data-aos-delay="500">
 	<div class="col-12">
 		<div class="swiper-container swiper-defence-videos">
 			<div class="swiper-wrapper">
+
+			<!-- <php 
+				if(have_rows('videos_self_defence')):
+					while(have_rows('videos_self_defence')): the_row();
+       		 ?>
+
 				<div class="swiper-slide">
-					<iframe class="w-100 rounded-lg' rounded-lg" height="315" src="https://www.youtube.com/embed/OpRo0IHZi7w" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+					<iframe class="w-100 rounded-lg' rounded-lg" height="315" src="<php echo get_sub_field('videos_defence') ?>" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
 				</div>
-				<div class="swiper-slide">
+
+				<php 
+					endwhile;
+				endif;
+       			 ?> -->
+
+
+				<!-- <div class="swiper-slide">
 					<iframe class="w-100 rounded-lg'" height="315" src="https://www.youtube.com/embed/OpRo0IHZi7w" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
 				</div>
 				<div class="swiper-slide">
@@ -867,7 +878,7 @@ data-aos-delay="500">
 				</div>
 				<div class="swiper-slide">
 					<iframe class="w-100 rounded-lg'" height="315" src="https://www.youtube.com/embed/OpRo0IHZi7w" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-				</div>
+				</div> -->
 			</div>
 			<div class="swiper-button-prev swiper-button-prev-defence-videos"></div>
 			<div class="swiper-button-next swiper-button-next-defence-videos"></div>

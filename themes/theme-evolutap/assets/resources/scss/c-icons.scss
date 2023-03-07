@@ -43,4 +43,9 @@
             content: '\f0e0';
         }
     }
+    &__square{
+        &::before{
+            content: '\f0c8';
+        }
+    }
 }

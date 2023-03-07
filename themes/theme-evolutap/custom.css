@@ -26,6 +26,12 @@ a:hover {
     background-size: cover;
 }
 
+.bg-video {
+    background-image: url(assets/public/images/self-defence-banner.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
 input::placeholder{
     color: white!important;
 }

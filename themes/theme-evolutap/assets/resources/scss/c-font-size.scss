@@ -1,10 +1,4 @@
-.before\:\:u-font-size-45::before {
-    font-size: 45px;
-}
-
-.before\:\:u-font-size-32::before {
-    font-size: 32px;
-}
+//nao tirar do before
 
 .font-size {
     &-0{
@@ -56,6 +50,11 @@
 
 .before\:\:{
     &u-font-size{
+        &-22{
+            &::before{
+                font-size:22px;
+            }
+        }
         &-45{
             &::before{
                 font-size:45px;

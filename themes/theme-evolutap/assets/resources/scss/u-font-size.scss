@@ -433,6 +433,22 @@ $utility-name: 'u-font-size';
                 font-size: 1.125rem !important;
             }
         }
+        &-22 {
+            @media screen and (min-width: 1200px) {
+                font-size: 1.37rem !important;
+            }
+        }
+        &-32 {
+            @media screen and (min-width: 1200px) {
+                font-size: 2rem !important;
+            }
+        }
+        &-94 {
+            @media screen and (min-width: 1200px) {
+                font-size: 5.9rem !important;
+            }
+        }
+        
         &-100 {
             @media screen and (min-width: 1200px) {
                 font-size: 6.25rem !important;
