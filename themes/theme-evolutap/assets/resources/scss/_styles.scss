@@ -1543,13 +1543,9 @@
 	}
 }
 
-.videos{
+.videos, .self-defence, .principais-videos{
 	margin-left: 6%;
 }
-.principais-videos{
-	margin-left: 6%;
-}
-
 
 .icon-square-coaching {
 	font-weight: 800;
@@ -1557,5 +1553,11 @@
     color: #f729d1;
     padding-right: 20px;
     padding-top: 20px;
+}
 
+
+.u-icon__square::before {
+		font-family: "Font Awesome 5 Free";
+		content: "\F0C8";
+		font-weight: 900;
 }

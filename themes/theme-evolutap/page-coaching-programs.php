@@ -78,26 +78,26 @@ get_header();
 
                 <div class="col-6">
                     <ul class="u-font-family-Bahnschrift color-folk--purple xl:u-font-size-32 u-list-style-none">
-                        <li class="mb-3 u-icon__square u-icon__free before::u-font-weight-black before::u-font-size-22 ">
+                        <li class="mb-3">
                             It will build your confidence
                         </li>
-                        <li class="mb-3 u-icon__square u-icon__free before::u-font-weight-black before::u-font-size-22">
+                        <li class="mb-3 u-icon__square::before">
                             It will build your confidenceIt helps improve your mental health
                         </li>
-                        <li class="mb-3 u-icon__square u-icon__free before::u-font-weight-black before::u-font-size-22 ">
+                        <li class="mb-3 ">
                             Develop Self-Discipline and Respect
                         </li>
                     </ul>
                 </div>
                 <div class="col-6">
                         <ul class="u-font-family-Bahnschrift color-folk--purple xl:u-font-size-32 u-list-style-none">
-                        <li class="mb-3 u-icon__square u-icon__free before::u-font-weight-black before::u-font-size-22 ">
+                        <li class="mb-3">
                             There is no age tostart learning jiu jitsu or self defense skills
                         </li>
-                        <li class="mb-3 u-icon__square u-icon__free before::u-font-weight-black before::u-font-size-22 ">
+                        <li class="mb-3">
                             It will help you overcome your fears
                         </li>
-                        <li class="mb-3 u-icon__square u-icon__free before::u-font-weight-black before::u-font-size-22 ">
+                        <li class="mb-3">
                             It helps improve your physical conditioning
                         </li>
                     </ul>
@@ -112,17 +112,27 @@ get_header();
         </div>
     </section>
 
-    <section class="py-6 bg-folk--gray">
+    <section class="self-defence py-6 bg-folk--gray">
         <div class="container d-flex justify-content-center">
             <div class="row">
-                <div class="col-12">
-                    <img class="h-100" src="<?= get_template_directory_uri()?>/assets/public/images/img-free-self.png" alt="self defence">
+                <div class="col-12 position-relative">
+                    <img class="img-fluid rounded-lg" src="<?= get_template_directory_uri()?>/assets/public/images/self-defence.png" alt="self defence">
+
+                    <div style="position: absolute; top:50%; left:50%; transform: translate(-50%, -50%);">
+                        <h1 class="text-center u-font-family-bronkz color-folk--yellow-weak xl:u-font-size-94">Free Self Defence Tutorials</h1>
+                        <div class="d-flex justify-content-center w-100">
+                            <div class="col-6">
+                                <a href="#" class="button-cta button-cta--watch-my py-3 px-md-5 px-sm-2 mt-4 d-block text-center u-font-family-Bahnschrift xl:u-font-size-22">Watch Now</a>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
     </section>
         
 <?php echo get_template_part('template-parts/content', 'blog-call-to-action')  ?>
+<?php echo get_template_part('template-parts/content', 'testimonials')  ?>
 
 
     <?php endwhile;?>
