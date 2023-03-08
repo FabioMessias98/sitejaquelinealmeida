@@ -1,27 +1,4 @@
 .header {
-	// &::before {
-	// 	content: '';
-	// 	width: 6%;
-	// 	max-width: 6%;
-	// 	height: 100%;
-	// 	flex: 0 0 6%;
-	// 	top: 0;
-	// 	left: 0;
-	// 	display: block;
-	// 	position: absolute;
-	// 	background-color: #F9F9F9;
-
-	// 	@media screen and (min-width: 1800px) {
-	// 		width: 84px;
-	// 		max-width: 84px;
-	// 		flex: 0 0 84px;
-	// 	}
-
-	// 	@media screen and (max-width: 991px) {
-	// 		display: none;
-	// 	}
-	// }
-
 	.navbar-brand {
 		margin-left: 2rem; //6%
 
@@ -35,23 +12,10 @@
 		flex: 0 0 6%;
 	}
 
-	.nav-item {
-		&.active {
-			.nav-link {
-				&::before {
-					width: 100%;
-					opacity: 1;
-					visibility: visible;
-				}
-			}
-		}
-	}
-
 	.nav-link {
 		position: relative;
-		font-size: 1.2rem; // 1.5625rem;
+		font-size: 1.2rem;
 		font-weight: bold;
-		// text-transform: uppercase;
 		color: #FFF;
 
 		@media screen and (min-width: 1800px) {
@@ -60,27 +24,6 @@
 
 		@media screen and (max-width: 450px) {
 			font-size: 2rem;
-		}
-
-		&:before {
-			content: '';
-			width: 20%;
-			height: 2px;
-			top: 100%;
-			left: 0;
-			transition: all .6s;
-			opacity: 0;
-			visibility: hidden;
-			position: absolute;
-			// background-color:;
-		}
-
-		&:hover {
-			&::before {
-				width: 100%;
-				opacity: 1;
-				visibility: visible;
-			}
 		}
 	}
 

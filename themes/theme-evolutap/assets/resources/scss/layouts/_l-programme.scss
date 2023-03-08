@@ -70,4 +70,18 @@ $layout-name: 'l-programme';
             @include programme-content(3.875rem);
         }
     }
+
+    &__timeline {
+        &__wrapper {
+            display: flex;
+            flex-wrap: wrap;
+        }        
+
+        &__week {
+            font-size: 3.75rem;
+            font-family: 'BROKENZ', sans-serif;
+            text-transform: uppercase;
+            color: #E6D019;
+        }
+    }
 }
