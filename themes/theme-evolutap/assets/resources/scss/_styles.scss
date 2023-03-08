@@ -1590,3 +1590,12 @@
 		margin-left: 0px;
 	}
 }
+
+.woman{
+	margin-left: 3%;
+	&--mobile-woman {
+		@media screen and (max-width:576px) {
+			margin-left: 0;
+		}
+	}
+}

@@ -20,7 +20,7 @@ get_header();
 
     <?php while ( have_posts() ) :the_post();?>
 
-    <section class=" feature bg-video">
+    <section class="woman woman--mobile-woman bg-video">
         <div class="container-fluid">
              <!-- sidebar social -->    
             <?php get_template_part('template-parts/content-sidebar-social') ?>
@@ -34,7 +34,7 @@ get_header();
                     <div class="overlay--black pl-0 h-auto">
 
                         <div class="mt-0">
-                            <h1 class="header--title text-uppercase color-folk--yellow-weak u-font-size-100 u-font-family-bronkz h-auto pl-md-7 pl-5" data-aos="zoom-out">
+                            <h1 class="header--title text-uppercase color-folk--yellow-weak u-font-size-100 xxl:u-font-size-180 u-font-family-bronkz h-auto pl-md-7 pl-5" data-aos="zoom-out">
                             Self defence <br>
                             for woman
                             </h1>
@@ -48,7 +48,7 @@ get_header();
                             </p>
 
                             <div class="pb-4 px-3">
-                                <div class="col-xl-9 col-md-6 col-11 px-0 ml-md-6 ml-3">
+                                <div class="col-xl-9 col-xxl-8 col-md-6 col-11 px-0 ml-md-6 ml-3">
                                     <a href="#" class="button-cta button-cta--learn-blog py-3 px-3 mt-4 d-flex justify-content-between align-items-center u-font-family-Bahnschrift">Join our self defense course
                                         <i class="far fa-chevron-right u-font-weight-black pr-4 font-size-30" style="opacity: 0.7;"></i>
                                     </a>
@@ -58,8 +58,9 @@ get_header();
                     </div>
                 </div>
 
-                <div class="col-lg-7  d-lg-flex d-none">
-                    <img class="w-100 object-fit-cover" src="<?= get_template_directory_uri() ?>/assets/public/images/video-banner.webp" alt="vídeo">
+                <div class="col-lg-7 d-lg-flex d-none">
+                    <!-- <img class="w-100 object-fit-cover" src="<?= get_template_directory_uri() ?>/assets/public/images/video-banner.webp" alt="vídeo"> -->
+                    <iframe class="w-100"  src="https://www.youtube.com/embed/_mgcUf1HRmo" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
                 </div>  
 
              </div>
