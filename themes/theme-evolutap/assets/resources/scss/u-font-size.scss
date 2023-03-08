@@ -5,14 +5,23 @@ $utility-name: 'u-font-size';
     &-22{
         font-size: 1.37rem !important; 
     }
+    &-30{
+        font-size: 1.87rem !important; 
+    }
     &-32{
         font-size: 2rem !important; 
+    }
+    &-37{
+        font-size: 2.37rem !important; 
     }
     &-45 {
         font-size: 2.81rem !important; 
     }
     &-52 {
         font-size: 3.25rem !important; 
+    }
+    &-54 {
+        font-size: 3.41rem !important; 
     }
     &-60 {
         font-size: 3.75rem !important; 
@@ -203,6 +212,11 @@ $utility-name: 'u-font-size';
                 font-size: 1.3rem !important;
             }
         }
+        &-30 {
+            @media screen and (min-width: 768px) {
+                font-size: 1.87rem !important;
+            }
+        }
         &-45 {
             @media screen and (min-width: 768px) {
                 font-size: 2.81rem !important;
@@ -211,6 +225,11 @@ $utility-name: 'u-font-size';
         &-50 {
             @media screen and (min-width: 768px) {
                 font-size: 3.12rem !important;
+            }
+        }
+        &-55 {
+            @media screen and (min-width: 768px) {
+                font-size: 3.43rem !important;
             }
         }
         &-58 {
@@ -238,6 +257,7 @@ $utility-name: 'u-font-size';
                 font-size: 6.25rem !important;
             }
         }
+       
         &-161 {
             @media screen and (min-width: 768px) {
                 font-size: 10.01rem !important;
@@ -441,6 +461,11 @@ $utility-name: 'u-font-size';
         &-32 {
             @media screen and (min-width: 1200px) {
                 font-size: 2rem !important;
+            }
+        }
+        &-37 {
+            @media screen and (min-width: 1200px) {
+                font-size: 2.37rem !important;
             }
         }
         &-94 {
