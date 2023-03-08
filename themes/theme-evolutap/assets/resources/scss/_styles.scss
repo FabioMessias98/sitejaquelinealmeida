@@ -1556,8 +1556,19 @@
 }
 
 
-.u-icon__square::before {
-		font-family: "Font Awesome 5 Free";
-		content: "\F0C8";
-		font-weight: 900;
+.l-self-defence{
+	&__item{
+		position: relative;
+		padding-left: 50px;
+		&::before{
+			font-family: "Font Awesome 5 Free";
+			content: "\F0C8";
+			font-weight: 900;
+			top: 50%;
+			left: 0;
+			transform: translateY(-50%);
+			position: absolute;
+			color: #f729d1;
+		}
+	}
 }
