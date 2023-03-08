@@ -6,18 +6,28 @@ $layout-name: 'l-testimonials';
     background-size: cover;
     background-repeat: no-repeat;
 
+    @media screen and (max-width: 991px) {
+        padding-left: 2rem;
+    }
+
     &__swiper {
         border-top-left-radius: 10px;
         border-bottom-left-radius: 10px;
+
+        .swiper-slide {
+            height: unset;
+        }
     }
 
     &__item {
+        height: 100%;
         padding: 1.5rem;
         border-radius: 10px;
         background-color: #470099;
 
         &__header {
             display: flex;
+            flex-wrap: wrap;
         }
 
         &__thumbnail {
@@ -55,6 +65,10 @@ $layout-name: 'l-testimonials';
             font-weight: 300;
             font-family: 'Bahnschrift', sans-serif;
             color: $color-folk-white;
+
+            @media screen and (max-width: 767px) {
+                font-size: 1rem;
+            }
         }
     }
 
@@ -64,6 +78,14 @@ $layout-name: 'l-testimonials';
         text-align: center;
         text-transform: uppercase;
         color: #E6D019;
+        
+        @media screen and (min-width: 1600px) {
+            font-size: 8.25rem;
+        }
+
+        @media screen and (max-width: 575px) {
+            font-size: 4rem;
+        }
     }
 
     &__button-pattern {

@@ -3,12 +3,24 @@ $layout-name: 'l-products';
 .#{$layout-name} {
     margin-left: 6%;
     background-color: #F0F0F0;
-    
+
+    @media screen and (max-width: 991px) {
+        margin-left: 0;
+    }
+
     &__title {
         font-size: 7.5rem;
         font-family: 'BROKENZ', sans-serif;
         text-transform: uppercase;
         color: $color-folk-light-purple;
+
+        @media screen and (min-width: 1600px) {
+            font-size: 9.375rem;
+        }
+
+        @media screen and (max-width: 575px) {
+            font-size: 5.5rem;
+        }
     }
 
     &__card {
@@ -17,14 +29,30 @@ $layout-name: 'l-products';
         &__title {
             font-size: 2rem;
             font-weight: 700;
-                font-family: 'Bahnschrift', sans-serif;
-                color: $color-folk-purple;
+            font-family: 'Bahnschrift', sans-serif;
+            color: $color-folk-purple;
+            
+            @media screen and (min-width: 1600px) {
+                font-size: 2.8125rem;
+            }
+
+            @media screen and (max-width: 575px) {
+                font-size: 1.5rem;
+            }
         }
     
         &__text {
             line-height: 100%;
             font-size: 1.375rem;
             color: $color-folk-purple;
+
+            @media screen and (min-width: 1600px) {
+                font-size: 1.875rem;
+            }
+
+            @media screen and (max-width: 575px) {
+                font-size: 1rem;
+            }
         }
     
         &__buy-now {
@@ -45,6 +73,14 @@ $layout-name: 'l-products';
             &:hover {
                 background-color: $color-folk-purple;
             }
+
+            @media screen and (min-width: 1600px) {
+                font-size: 2.8125rem;
+            }
+
+            @media screen and (max-width: 575px) {
+                font-size: 1.5rem;
+            }
         }
 
         &__price {
@@ -53,6 +89,14 @@ $layout-name: 'l-products';
             font-weight: 700;
             font-family: 'Bahnschrift', sans-serif;
             color: $color-folk-purple;
+
+            @media screen and (min-width: 1600px) {
+                font-size: 5rem;
+            }
+
+            @media screen and (max-width: 575px) {
+                font-size: 2.625rem;
+            }
         }
     }
 

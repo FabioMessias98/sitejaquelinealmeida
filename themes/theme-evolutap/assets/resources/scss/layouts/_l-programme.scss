@@ -1,0 +1,73 @@
+$layout-name: 'l-programme';
+
+.#{$layout-name} {
+    background-color: $color-folk-gray;
+    
+    &__title {
+        font-size: 5rem;
+        font-family: 'BROKENZ', sans-serif;
+        text-transform: uppercase;
+        color: #E6D019;
+    }
+
+   &__text {
+        display: block;
+        font-size: 1.75rem;
+        font-family: 'Bahnschrift', sans-serif;
+        color: #1E013F;
+    }
+
+    &__btn-quote {
+        width: 100%;
+        border-radius: 10px;
+        display: block;
+        font-size: 2rem;
+        font-family: 'Bahnschrift', sans-serif;
+        text-align: center;
+        color: $color-folk-white !important;
+        background-color: #DB2FCD;
+
+        &:hover {
+            background-color: $color-folk-light-purple;
+        }
+    }
+
+    &__content {
+        p, a {
+            font-size: 1.75rem;
+            font-family: 'Bahnschrift', sans-serif;
+        }
+
+        h1, h2, h3, h4, h5, h6 {
+            text-transform: uppercase !important;
+
+            * {
+                font-family: 'BROKENZ', sans-serif;
+            }
+        }
+
+        h2 {
+            @include programme-content(9.375rem);
+        }
+
+        h3 {
+            @include programme-content(7.5rem);
+        }
+
+        h3 {
+            @include programme-content(6.25rem);
+        }
+
+        h4 {
+            @include programme-content(5.25rem);
+        }
+
+        h5 {
+            @include programme-content(4.75rem);
+        }
+
+        h6 {
+            @include programme-content(3.875rem);
+        }
+    }
+}

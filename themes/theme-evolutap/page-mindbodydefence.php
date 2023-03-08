@@ -132,10 +132,7 @@ get_header();
 <!-- end submenu -->
 
 <!-- program -->
-<?php if(have_rows( 'the_programme' )) : 
-		while(have_rows( 'the_programme' )) : the_row();
-?>
-<section class="program mt-6">
+<section class="l-programme mt-6">
 	
 	<div class="container">
 		
@@ -143,70 +140,60 @@ get_header();
 
 			<div class="col-12">
 
-				<h2 class="section-title font-weight--black mb-5">
-					Express your <br>
-					Confidence
+				<h2 class="u-font-size-80 sm:u-font-size-100 xl:u-font-size-120 xxl:u-font-size-150 u-font-family-brokenz text-uppercase u-color-folk-light-purple mb-5">
+					Express your Confidence
 				</h2>
 			</div>
 
 			<div 
 			class="col-lg-6 d-lg-flex align-items-center px-sm-0 pl-lg-3 pr-lg-0"
 			data-aos="fade-right"
-			data-aos-duration="1500"
-			>
+			data-aos-duration="1500">
                 <img 
-                class="img-fluid"
-                src="<?= get_sub_field('image') ?>" 
-                alt="">
+                class="img-fluid w-100 h-100 u-object-fit-cover"
+                src="<?php echo get_template_directory_uri()?>/assets/public/images/the-programme-image.webp" 
+                alt="The programme">
 			</div>
 
 			<div 
 			class="col-lg-6 box-shadow-folk mt-5 mt-sm-0 py-md-5 pl-md-5" 
 			data-aos="fade-left" 
-			data-aos-duration="1500" id="<?= sanitize_title(get_field('section_2')); ?>">
+			data-aos-duration="1500" 
+			id="<?php echo sanitize_title(get_field('section_2')); ?>">
 
-				<h3 class="program--title font-weight--black text-capitalize">
+				<h3 class="l-programme__title">
 					the programme
 				</h3>
 
-				<p class="program--text mb-6">
-					<?= get_sub_field('content') ?>
-				</p>
+				<span class="l-programme__text mb-6">
+					This is a resilience building programme that uses a dual approach to develop both mental and physical self-defence skills. <br><br>
 
-				<span class="program--text d-block font-weight--regular">
-					<?= get_sub_field('items') ?>
+					8 WEEKS COURSE <br><br>
+
+					– 1 hour weekly class <br>
+					– Mindset Training Technique <br>
+					– Physical Self-Defence
 				</span>
 
-				<a
-				class="btn program--btn-quote font-weight--black bg-folk--yellow mt-6"
-				href="<?= get_home_url(null, 'contact') ?>">
-					request a quote
+				<div class="row">
 
-					<span class="btn--line-bottom"></span>
-				</a>
+					<div class="col-7">
+
+						<a 
+						class="l-programme__btn-quote py-4"
+						href="<?php echo get_home_url( null, 'contact' ) ?>">
+							Request a Quote
+						</a>
+					</div>
+				</div>
 			</div>
-		</div>
-	</div>
-</section>
-<?php endwhile; 
-	endif;
-?>
 
-<section class="program">
+			<div 
+			class="col-12 mt-6" 
+			id="why-mind-body">
 
-	<div class="container">
-
-		<div class="row">
-
-			<div class="col-12 mt-6" id="why-mind-body">
-
-				<!-- <pre class="ml-9">
-					<php var_dump($post); ?>
-				</pre> -->
-
-				<span class="program--content">
-					<!-- the_content() -->
-					<?= $post->post_content; ?>
+				<span class="l-programme__content">
+					<?php echo get_field( 'content' ) ?>
 				</span>
 			</div>
 		</div>

@@ -8,8 +8,13 @@ $layout-name: 'l-header';
     background: none !important;
     z-index: 999;
 
+    .navbar-nav {
+        flex: 1;
+        justify-content: space-around;
+    }
+
     .nav-item {
-        margin: 0 3rem;
+        margin: 0 1rem;
     }
 
     .nav-link {
@@ -18,6 +23,29 @@ $layout-name: 'l-header';
         font-size: 1.75rem;
         font-weight: 100;
         font-family: 'Bahnschrift'; 
-        text-transform: capitalize;
+        text-transform: lowercase;
+
+        &::before {
+            content: '';
+            width: 0;
+            height: 5px;
+            top: 100%;
+            left: 50%;
+            transform: translateX(-50%);
+            transition: all .4s;
+            opacity: 0;
+            visibility: hidden;
+            position: absolute;
+            background-color: $color-folk-light-purple;
+        }        
+    }
+}
+
+.active .nav-link,
+.nav-item:hover .nav-link {
+    &::before {
+        width: calc(100% - 1rem);
+        opacity: 1;
+        visibility: visible;
     }
 }

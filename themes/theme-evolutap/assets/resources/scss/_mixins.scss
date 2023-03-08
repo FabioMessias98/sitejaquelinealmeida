@@ -9,6 +9,22 @@
     color: $color;
 }
 
+@mixin programme-content($font-size: 2rem) {
+    font-size: calc(#{$font-size} - 30px) !important;
+
+    @media screen and (min-width: 1600px) {
+        font-size: $font-size !important;
+    }
+
+    @media screen and (max-width: 991px) {
+        font-size: calc(#{$font-size} - 50px) !important;
+    }
+
+    @media screen and (max-width: 575px) {
+        font-size: calc(#{$font-size} - 70px) !important;
+    }
+}
+
 @mixin bg-cover-repeat {
 	background-size: cover;
 	background-repeat: no-repeat;
