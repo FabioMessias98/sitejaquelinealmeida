@@ -4,24 +4,24 @@
 
         <div class="row">
 
-            <div class="col-12 my-5 px-0">
+            <div class="col-12 mt-md-5 mb-5 px-0">
                 
                 <div class="row">
 
-                    <div class="col-4 px-5">
+                    <div class="col-lg-4 px-5">
                         
-                        <h3 class="l-testimonials__title">
+                        <h3 class="l-testimonials__title mb-5 mb-md-1">
                             Testimonials
                         </h3>
 
-                        <div class="d-flex justify-content-around mt-5 pt-5 px-5">
+                        <div class="d-none d-lg-flex justify-content-around mt-5 pt-5 px-5">
                             <!-- arrows -->
                             <div class="swiper-button-prev l-testimonials__button-pattern l-testimonials__button-prev js-swiper-button-prev-testimonials"></div>
                             <div class="swiper-button-next l-testimonials__button-pattern l-testimonials__button-next js-swiper-button-next-testimonials"></div>
                         </div>
                     </div>
 
-                    <div class="col-8">
+                    <div class="col-lg-8">
 
                         <!-- swiper -->
                         <div class="l-testimonials__swiper swiper-container js-swiper-testimonials">
@@ -47,7 +47,7 @@
 
                                                     <div class="l-testimonials__item__header">
 
-                                                        <div class="col-4">
+                                                        <div class="col-md-4 pl-0 pl-md-3">
                                                             <div class="l-testimonials__item__thumbnail">
                                                                 <?php if( get_the_post_thumbnail() ) : ?>
                                                                     <?php
@@ -65,7 +65,7 @@
                                                             </div>
                                                         </div>
 
-                                                        <div class="col-8 d-flex flex-column justify-content-center pl-0">
+                                                        <div class="col-md-8 d-flex flex-column justify-content-center mt-3 mt-md-0 pl-0">
                                                             <h5 class="l-testimonials__item__name mb-0">
                                                                 <!-- Cristina Simões -->
                                                                 <?php the_title() ?>

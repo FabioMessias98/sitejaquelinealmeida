@@ -209,7 +209,7 @@ get_header();
 		<div class="row">
 			
 			<div class="col-12 mt-5 mt-md-0 mb-0 mb-md-5">
-				<h2 class="section-title font-weight--black">
+				<h2 class="u-font-size-80 sm:u-font-size-100 xl:u-font-size-120 xxl:u-font-size-150 u-font-family-brokenz text-uppercase u-color-folk-light-purple mb-5">
 					Programme Timeline
 				</h2>
 			</div>
@@ -217,33 +217,34 @@ get_header();
 			<div class="col-12">
 
 				<!-- loop -->
-				<?php if(have_rows( 'timeline' )) : 
+				<?php 
+					if(have_rows( 'timeline' )) : 
 						while(have_rows( 'timeline' )) : the_row(); 
 				?>
-				<div class="row timeline--row-hover" data-aos="fade-up" data-aos-duration="1500">
+							<div 
+							class="l-programme__timeline__wrapper" 
+							data-aos="fade-up" 
+							data-aos-duration="1500">
 
-					<div class="col-md-2 d-flex align-items-center mt-5 mb-0 my-md-5">
-						<p class="program--text font-weight--black text-uppercase">
-							<?= get_sub_field('week') ?>
+								<div class="col-md-2 d-flex align-items-center mt-5 mb-0 my-md-5 bg-primary">
+									<p class="l-programme__timeline__week">
+										<?php echo get_sub_field( 'week' ) ?>
+									</p>
+								</div>
 
-							<span class="timeline--week color-folk--yellow">
-								<?= get_sub_field('week') ?>
-							</span>
-						</p>
-					</div>
+								<div class="col-md-10 my-0 my-md-5">
 
-					<div class="col-md-10 my-0 my-md-5">
+									<h6 class="timeline--title font-weight--medium">
+										<?= get_sub_field('title') ?>
+									</h6>
 
-						<h6 class="timeline--title font-weight--medium">
-							<?= get_sub_field('title') ?>
-						</h6>
-
-						<p class="timeline--description  font-weight--medium color-folk--yellow">
-							<?= get_sub_field('subtitle') ?>
-						</p>
-					</div>
-				</div>
-				<?php endwhile;
+									<p class="timeline--description  font-weight--medium color-folk--yellow">
+										<?= get_sub_field('subtitle') ?>
+									</p>
+								</div>
+							</div>
+				<?php 
+						endwhile;
 					endif; 
 				?>
 				<!-- end loop -->

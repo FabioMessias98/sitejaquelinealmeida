@@ -21,7 +21,7 @@ get_header();
 <?php while ( have_posts() ) : the_post(); ?>
 
 <!-- banner social -->
-<div class="container-fluid">
+<div class="container-fluid px-0 px-lg-3">
 
     <div class="row">
 		
@@ -55,11 +55,11 @@ get_header();
 	                        alt="Banner product">
 	                    </picture>
 
-	                    <div class="header--box-content mt-lg-0 xl-mt-10">
+	                    <div class="header--box-content d-flex mt-lg-0 xl-mt-10 pl-3 pl-sm-8">
 	                		<h1 
-	                		class="header--title text-center color-folk--yellow-weak md:u-font-size-161 sm:u-font-size-75 u-font-family-bronkz"
+	                		class="header--title text-center md:u-font-size-161 sm:u-font-size-75 u-font-family-bronkz text-uppercase u-color-folk-light-purple"
 	                		data-aos="zoom-out">
-	                			JAQUE ALMEIDA
+	                			products
 	                		</h1>
                 		</div>
                 	</div>
@@ -71,18 +71,17 @@ get_header();
 <!-- end banner social -->
 
 <!-- courses -->
-<section class="l-products py-5">
+<section class="l-products pt-8 pb-5">
 
     <div class="container mb-5">
 
         <div class="row justify-content-center">
 
-            <div class="col-11 my-5">
+            <div class="col-lg-11 my-5">
 
                 <h3 class="l-products__title">
                     Courses
                 </h3>
-
 
                 <!-- swiper -->
                 <div class="position-relative">
@@ -142,7 +141,7 @@ get_header();
 
                                                     <div class="row">
 
-                                                        <div class="col-6">
+                                                        <div class="col-sm-6 order-2 order-sm-1">
 
                                                             <div class="row">
 
@@ -154,7 +153,7 @@ get_header();
                                                             </div>
                                                         </div>
 
-                                                        <div class="col-6 d-flex justify-content-center align-items-center">
+                                                        <div class="col-sm-6 order-1 order-sm-2 d-flex justify-content-center align-items-center mb-3 mb-sm-0">
                                                             <p class="l-products__card__price mb-0">
                                                                 <!-- $99 -->
                                                                 <?php echo '$' . get_field( 'price' ) ?>
@@ -181,7 +180,7 @@ get_header();
                 <!-- end swiper -->
             </div>
 
-            <div class="col-11 my-5">
+            <div class="col-lg-11 my-5">
 
                 <h3 class="l-products__title">
                     Products
@@ -233,20 +232,20 @@ get_header();
 
                                                 <div class="card-body pt-4">
 
-                                                    <h3 class="l-products__card__title mb-4">
+                                                    <h3 class="l-products__card__title text-center text-sm-left mb-3 mb-sm-4">
                                                         <!-- Beginnings
                                                         Self Defence -->
                                                         <?php the_title() ?>
                                                     </h3>
 
-                                                    <span class="l-products__card__text d-block mb-4">
+                                                    <span class="l-products__card__text d-block text-center text-sm-left mb-4">
                                                         <!-- Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor -->
                                                         <?php echo get_field( 'description') ?>
                                                     </span>
 
                                                     <div class="row">
 
-                                                        <div class="col-6">
+                                                        <div class="col-sm-6 order-2 order-sm-1">
 
                                                             <div class="row">
 
@@ -258,7 +257,7 @@ get_header();
                                                             </div>
                                                         </div>
 
-                                                        <div class="col-6 d-flex justify-content-center align-items-center">
+                                                        <div class="col-sm-6 order-1 order-sm-2 d-flex justify-content-center align-items-center mb-3 mb-sm-0">
                                                             <p class="l-products__card__price mb-0">
                                                                 <!-- $99 -->
                                                                 <?php echo '$' . get_field( 'price' ) ?>
