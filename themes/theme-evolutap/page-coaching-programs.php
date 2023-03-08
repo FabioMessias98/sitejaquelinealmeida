@@ -78,27 +78,27 @@ get_header();
 
                 <div class="col-6">
                     <ul class="u-font-family-Bahnschrift color-folk--purple xl:u-font-size-32 u-list-style-none">
-                        <li class="mb-3">
+                        <li class="mb-3 l-self-defence__item">
                             It will build your confidence
                         </li>
-                        <li class="mb-3 u-icon__square::before">
-                            It will build your confidenceIt helps improve your mental health
+                        <li class="mb-3 l-self-defence__item">
+                            It will build your confidenceIt helps improve your mental <br> health
                         </li>
-                        <li class="mb-3 ">
-                            Develop Self-Discipline and Respect
+                        <li class="mb-3 l-self-defence__item">
+                            Develop Self-Discipline and <br> Respect
                         </li>
                     </ul>
                 </div>
                 <div class="col-6">
                         <ul class="u-font-family-Bahnschrift color-folk--purple xl:u-font-size-32 u-list-style-none">
-                        <li class="mb-3">
-                            There is no age tostart learning jiu jitsu or self defense skills
+                        <li class="mb-3 l-self-defence__item">
+                            There is no age tostart learning <br> jiu jitsu or self defense skills
                         </li>
-                        <li class="mb-3">
-                            It will help you overcome your fears
+                        <li class="mb-3 l-self-defence__item">
+                            It will help you overcome your <br> fears
                         </li>
-                        <li class="mb-3">
-                            It helps improve your physical conditioning
+                        <li class="mb-3 l-self-defence__item">
+                            It helps improve your physical <br> conditioning
                         </li>
                     </ul>
                 </div>
