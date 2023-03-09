@@ -1572,3 +1572,30 @@
 		}
 	}
 }
+
+.defence-tutorials {
+	position: absolute;
+	top:50%; 
+	left:50%;
+	transform: translate(-50%, -50%);
+	&--mobile-defence-tutorials {
+		@media screen and (max-width:576px) {
+			position: relative;
+		}
+	}
+}
+
+@media screen and (max-width:576px) {
+	.self-defence{
+		margin-left: 0px;
+	}
+}
+
+.woman{
+	margin-left: 3%;
+	&--mobile-woman {
+		@media screen and (max-width:576px) {
+			margin-left: 0;
+		}
+	}
+}

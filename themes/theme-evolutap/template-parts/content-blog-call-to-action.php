@@ -1,10 +1,10 @@
-<section class="blogs py-6 bg-folk--gray">
+<section class="blogs py-md-6 py-2 bg-folk--gray">
 	<div class="row">
 		<div class="col-12">
-			<h2 class="mb-4 text-uppercase text-center color-folk--light-purple u-font-family-bronkz lg:u-font-size-121 md:u-font-size-98 u-font-size-52">
+			<h2 class="mb-4 text-uppercase text-center color-folk--light-purple u-font-family-bronkz lg:u-font-size-121 md:u-font-size-98 u-font-size-54">
 				Become Empowered, Today!
 			</h2>
-			<h3 class="color-folk--purple text-center md:u-font-size-45 u-font-size-32">
+			<h3 class="color-folk--purple text-center md:u-font-size-45 u-font-size-30">
 				For women, taught by women
 			</h3>
 		</div>
