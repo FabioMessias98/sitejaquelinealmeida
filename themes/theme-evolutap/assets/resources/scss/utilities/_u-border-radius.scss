@@ -1,0 +1,7 @@
+$utility-name: 'u-border-radius';
+
+.#{$utility-name} {
+    &-8 {
+        border-radius: 8px !important;
+    }
+}

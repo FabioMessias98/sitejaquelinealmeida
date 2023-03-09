@@ -75,13 +75,103 @@ $layout-name: 'l-programme';
         &__wrapper {
             display: flex;
             flex-wrap: wrap;
+            background-color: $color-folk-white;
         }        
 
+        &__box-week {
+            width: 100%;
+            height: 100%;
+            border-radius: 4px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: #7919E5;
+        }
+
         &__week {
+            line-height: 100%;
             font-size: 3.75rem;
             font-family: 'BROKENZ', sans-serif;
             text-transform: uppercase;
             color: #E6D019;
+        }
+
+        &__title {
+            height: 80px;
+            line-height: 38px;
+            overflow: hidden;
+            font-size: 2.375rem;
+            font-family: 'Bahnschrift', sans-serif;
+            color: $color-folk-purple;
+        }
+    }
+
+    &__coaches {
+        &__col-child {
+            &:nth-of-type(odd) {
+                .#{$layout-name} {
+                    &__coaches {
+                        &__item-child {
+                            &:nth-of-type(odd) {
+                                order: 1;
+                            }
+
+                            &:nth-of-type(even) {
+                                order: 2;
+                            }
+                        }
+                    }
+                }
+            }
+
+            &:nth-of-type(even) {
+                .#{$layout-name} {
+                    &__coaches {
+                        &__item-child {
+                            &:nth-of-type(odd) {
+                                order: 2;
+                            }
+
+                            &:nth-of-type(even) {
+                                order: 1;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+
+        &__title {
+            font-size: 7.5rem !important;
+            font-family: 'BROKENZ';
+            color: #DC30CE;
+
+            @media screen and (min-width: 1600px) {
+                font-size: 9.375rem !important;
+            }
+
+            @media screen and (max-width: 991px) {
+                font-size: 6.25rem !important;
+            }
+
+            @media screen and (max-width: 575px) {
+                font-size: 5rem !important;
+            }
+        }
+
+        &__content {
+            height: 100%;
+            background-color: $color-folk-white;
+        }
+
+        &__text {
+            line-height: 100%;
+            font-size: 1.75rem;
+            font-family: 'Bahnschrift', sans-serif;
+
+            @media screen and (min-width: 1600px) {
+                font-size: 2.375rem;
+            }
         }
     }
 }

@@ -1,0 +1,54 @@
+$layout-name: 'l-photos';
+
+.#{$layout-name} {
+    margin-left: 6%;
+    
+    .swiper-container {
+        .swiper-slide {
+            border-radius: 8px;
+            overflow: hidden;
+
+            &::before {
+                content: '';
+                width: 100%;
+                height: 100%;
+                top: 0;
+                left: 0;
+                opacity: .5;
+                position: absolute;
+                background-color: $color-folk-white;
+            }
+
+            &.swiper-slide-active {
+                &::before {
+                    opacity: 0;
+                }
+            }
+        }
+
+        .swiper-button-pattern {
+            &::after {
+                font-size: 3rem;
+                font-weight: 900;
+                font-family: 'Font Awesome 5 Free';
+                color: $color-folk-pink;
+            }
+        }
+
+        .swiper-button-prev {
+            left: 5rem;
+
+            &::after {
+                content: '\f053';
+            }
+        }
+
+        .swiper-button-next {
+            right: 5rem;
+
+            &::after {
+                content: '\f054';
+            }
+        }
+    }
+}

@@ -1,0 +1,16 @@
+$utility-name: 'u-bg-folk';
+
+.#{$utility-name} {
+    &-pink {
+        background-color: $color-folk-pink !important;
+    }
+}
+.hover\: {
+    &#{$utility-name} {
+        &-light-purple {
+            &:hover {
+                background-color: $color-folk-light-purple !important;
+            }
+        }
+    }
+}

@@ -50,52 +50,19 @@ get_header();
                 		</h1>
                 	</div>
                 </div>
-            </div><!-- row -->
-        </div><!-- col -->
-    </div><!-- row -->
+            </div>
+        </div>
 </div>
 <!-- end banner social -->
-
-<div class="my-5 ml-9 d-none">
-	<!--
-		// $categories = wp_get_object_terms( $post->ID, 'category', [ 'parent' => 10, 'number' => 1 ] );
-
-		// if ( ! empty( $categories ) ) {
-		//     $category_links = [];
-
-		//     foreach ( $categories as $category ) {
-		//         $category_links[] = '<a href="' . esc_url( get_term_link( $category ) ) . '">' . $category->name . '</a>';
-		//     }
-
-		//     echo implode( ', ', $category_links );
-		// }
-
-
-		// =================
-		$terms = get_terms(
-		    array(
-		        'taxonomy'   => 'category',
-		        'hide_empty' => true,
-		        //'number'     => -1,
-		        'parent'     => 10
-		    )
-		);
-
-		foreach($terms as $term): 
-	-->
-
-		<!-- <a href="<= get_term_link($term->term_id) ?>">Link Category</a> -->
-	<!-- 
-		endforeach;
-	-->
-</div>
 
 <!-- submenu -->
 <div class="submenu d-md-flex align-items-center my-5 my-md-0">
 
 	<ul class="d-md-flex mb-0 ml-md-4">
 		<!-- loop -->
-		<li class="submenu--item my-3 my-md-0" data-aos="fade-left">
+		<li 
+		class="submenu--item my-3 my-md-0" 
+		data-aos="fade-left">
 			<a
 			class="submenu--links font-weight-bold text-uppercase"
 			href="#">
@@ -104,7 +71,9 @@ get_header();
 		</li>
 		<!-- end loop -->
 
-		<li class="submenu--item my-3 my-md-0" data-aos="fade-left">
+		<li 
+		class="submenu--item my-3 my-md-0" 
+		data-aos="fade-left">
 			<a
 			class="submenu--links font-weight-bold text-uppercase"
 			href="#programme">
@@ -112,7 +81,9 @@ get_header();
 			</a>
 		</li>
 
-		<li class="submenu--item my-3 my-md-0" data-aos="fade-left">
+		<li 
+		class="submenu--item my-3 my-md-0" 
+		data-aos="fade-left">
 			<a
 			class="submenu--links font-weight-bold text-uppercase"
 			href="#timeline">
@@ -120,7 +91,9 @@ get_header();
 			</a>
 		</li>
 
-		<li class="submenu--item my-3 my-md-0" data-aos="fade-left">
+		<li 
+		class="submenu--item my-3 my-md-0" 
+		data-aos="fade-left">
 			<a
 			class="submenu--links font-weight-bold text-uppercase"
 			href="#coaches">
@@ -132,7 +105,7 @@ get_header();
 <!-- end submenu -->
 
 <!-- program -->
-<section class="l-programme mt-6">
+<section class="l-programme mt-6 pl-6">
 	
 	<div class="container">
 		
@@ -197,18 +170,12 @@ get_header();
 				</span>
 			</div>
 		</div>
-	</div>
-</section>
-<!-- end program -->
-
-<!-- timeline -->
-<section class="timeline mt-sm-5" id="<?= sanitize_title(get_field('section_3')); ?>">
-	
-	<div class="container">
 		
-		<div class="row">
+		<div 
+		class="row"
+		id="<?php echo sanitize_title(get_field('section_3')); ?>">
 			
-			<div class="col-12 mt-5 mt-md-0 mb-0 mb-md-5">
+			<div class="col-12">
 				<h2 class="u-font-size-80 sm:u-font-size-100 xl:u-font-size-120 xxl:u-font-size-150 u-font-family-brokenz text-uppercase u-color-folk-light-purple mb-5">
 					Programme Timeline
 				</h2>
@@ -222,25 +189,27 @@ get_header();
 						while(have_rows( 'timeline' )) : the_row(); 
 				?>
 							<div 
-							class="l-programme__timeline__wrapper" 
+							class="l-programme__timeline__wrapper mb-4" 
 							data-aos="fade-up" 
 							data-aos-duration="1500">
 
-								<div class="col-md-2 d-flex align-items-center mt-5 mb-0 my-md-5 bg-primary">
-									<p class="l-programme__timeline__week">
-										<?php echo get_sub_field( 'week' ) ?>
-									</p>
+								<div class="col-md-2 d-flex align-items-center px-0">
+									<div class="l-programme__timeline__box-week">
+										<p class="l-programme__timeline__week mb-0">
+											<?php echo get_sub_field( 'week' ) ?>
+										</p>
+									</div>
 								</div>
 
-								<div class="col-md-10 my-0 my-md-5">
+								<div class="col-md-10 py-2 pl-5">
 
-									<h6 class="timeline--title font-weight--medium">
-										<?= get_sub_field('title') ?>
+									<h6 class="l-programme__timeline__title mb-0">
+										<?php echo get_sub_field( 'title' ) ?> <br>
+
+										<span class="u-color-folk-yellow mb-0">
+											<?php echo get_sub_field( 'subtitle' ) ?>
+										</span>
 									</h6>
-
-									<p class="timeline--description  font-weight--medium color-folk--yellow">
-										<?= get_sub_field('subtitle') ?>
-									</p>
 								</div>
 							</div>
 				<?php 
@@ -250,63 +219,66 @@ get_header();
 				<!-- end loop -->
 			</div>
 		</div>
-	</div>
-</section>
-<!-- end timeline -->
-
-<!-- coaches -->
-<section class="coaches" id="<?= sanitize_title(get_field('section_4')); ?>">
-
-	<div class="container">
 		
-		<div class="row">
+		<div 
+		class="row"
+		id="<?php echo sanitize_title(get_field('section_4')); ?>">
 			
-			<div class="col-12 mb-n8">
+			<div class="col-12">
 
-				<h2 class="section-title font-weight--black">
+				<h2 class="u-font-size-80 sm:u-font-size-100 xl:u-font-size-120 xxl:u-font-size-150 u-font-family-brokenz text-uppercase u-color-folk-light-purple mb-5">
 					Coaches
 				</h2>
 			</div>
 
 			<!-- loop -->
-			<?php if(have_rows( 'coaches' )) : 
-					while(have_rows( 'coaches' )) : the_row(); 
-			?>
-			<div class="col-12 coaches--col-child mt-7 mb-0 mb-lg-9 pt-5">			
+			<div>
+				<?php 
+					if(have_rows( 'coaches' )) : 
+						while(have_rows( 'coaches' )) : the_row(); 
+				?>
+							<div class="l-programme__coaches__col-child col-12 mb-4">			
 
-				<div class="row justify-content-between">
+								<div class="row">
 
-					<div class="col-md-5 coaches--col-min-child">
+									<div class="l-programme__coaches__item-child col-md-6 pt-3 px-0">
 
-						<img 
-						class="img-fluid"
-						src="<?= get_sub_field('photo') ?>"
-						alt="<?= get_sub_field('coach') ?>"
-						data-aos="flip-left"
-						data-aos-duration="1500">
+										<img 
+										class="img-fluid w-100"
+										src="<?php echo get_template_directory_uri()?>/assets/public/images/lorna-photo.webp"
+										alt="Lorna"
+										data-aos="flip-left"
+										data-aos-duration="1500">
+									</div>
 
-						<span class="coaches--square"></span>
-					</div>
+									<div 
+									class="l-programme__coaches__item-child col-md-6 mt-5 mt-md-0 pt-5 px-0" 
+									data-aos="fade-up">
 
-					<div class="col-md-5 coaches--col-min-child mt-5 mt-md-0" data-aos="fade-up">
+										<div class="l-programme__coaches__content pt-4 pl-5 pr-4">
+											<h4 class="l-programme__coaches__title">
+												Lorna Lawless
+											</h4>
 
-						<h4 class="coaches--name font-weight--black">
-							<?= get_sub_field('coach') ?>
-						</h4>
+											<p class="l-programme__coaches__text">
+												Lorna Lawless is a Coaching Psychologist and creator of Next Level Coaching. She holds a first-class honours M.A. in Coaching Psychology from University College Cork and a BSc in Psychology from the Open University. She is a graduate member of the Psychological Society of Ireland (PSI), the association for Coaching & the Secretary for the Coaching Psychology SIG in PSI. She has worked as a mindset coach in SBG Ireland and is currently researching women’s mental toughness through using combat sports.
 
-						<p class="coaches--text font-weight--regular mb-4 mb-md-7">
-							<?= get_sub_field('content') ?>
-						</p>
+												<br><br>
 
-						<span class="coaches--text d-block font-weight-bold mt-4">
-							<?= get_sub_field('items') ?>
-						</span>
-					</div>
-				</div>
+												<strong>LORNA`S COACHING EXPERTISE</strong> <br><br>
+
+												– Mental Toughness <br>
+												– Emotional Intelligence
+											</p>
+										</div>
+									</div>
+								</div>
+							</div>
+				<?php 
+						endwhile; 
+					endif; 
+				?>
 			</div>
-			<?php endwhile; 
-				endif; 
-			?>
 			<!-- end loop -->
 		</div>
 	</div>
@@ -314,19 +286,45 @@ get_header();
 <!-- end coaches -->
 
 <!-- photos -->
-<section class="photos mt-6 mt-md-0 mb-6" id="photos">
+<section 
+class="l-photos py-5 mb-6" 
+id="photos">
 
-	<div class="container">
+	<div class="container-fluid">
 
 		<div class="row">
 
-			<div class="col-12">
+			<div class="col-12 mt-5">
 
-				<h2 class="section-title font-weight--black">
+				<h2 class="u-font-size-80 sm:u-font-size-100 xl:u-font-size-120 xxl:u-font-size-150 u-font-family-brokenz text-uppercase u-color-folk-light-purple ml-5">
 					Photos
 				</h2>
 
-				<div class="row justify-content-between">
+				<!-- swiper -->
+				<div class="swiper-container js-swiper-photos">
+
+					<div class="swiper-wrapper">
+
+						<!-- slide -->
+						<?php for( $i = 0; $i < 10; $i++ ) : ?>
+							<div class="swiper-slide">
+
+								<img
+								class="img-fluid w-100"
+								src="http://evolutap.test/wordpress/jaquelinealmeidaupdate/wp-content/uploads/2020/12/img-photo-1.png"
+								alt="Photo 01">
+							</div>
+						<?php endfor; ?>
+						<!-- end slide -->
+					</div>
+
+					<!-- arrows -->
+					<div class="swiper-button-pattern swiper-button-prev js-swiper-button-prev-photos"></div>
+					<div class="swiper-button-pattern swiper-button-next js-swiper-button-next-photos"></div>
+				</div>
+				<!-- end swiper -->
+
+				<div class="row justify-content-between d-none">
 
 					<!-- loop -->
 					<?php 
@@ -336,7 +334,10 @@ get_header();
 							while(have_rows('photos')) : the_row();
 								$duration += 300;
 					?>
-								<div class="col-md-6 col-lg-5 mb-5" data-aos="zoom-in" data-aos-duration="<?= $duration; ?>">
+								<div 
+								class="col-md-6 col-lg-5 mb-5" 
+								data-aos="zoom-in" 
+								data-aos-duration="<?php echo $duration; ?>">
 
 									<div class="card border-0 rounded-0 box-shadow-folk p-4">
 										
@@ -364,7 +365,7 @@ get_header();
 					<!-- end loop -->
 				</div>
 
-				<div class="row justify-content-center">
+				<div class="row justify-content-center d-none">
 
 					<div class="col-md-4 d-flex justify-content-center mt-5">
 						<a
@@ -377,76 +378,27 @@ get_header();
 					</div>
 				</div>
 			</div>
+
+			<div class="col-12 mt-5">
+
+				<div class="row justify-content-center">
+
+					<div class="col-4">
+						<a
+						class="w-100 u-border-radius-8 d-block u-font-size-32 u-font-family-bahnschrift text-center u-color-folk-white u-bg-folk-pink hover:u-bg-folk-light-purple py-2" 
+						href="#">
+							View More
+						</a>
+					</div>
+				</div>
+			</div>
 		</div>
 	</div>
 </section>
 <!-- end photos -->
 
 <!-- testemonials -->
-<section class="testemonials mb-6" id="testemonials">
-	
-	<div class="container">
-
-		<div class="row">
-			
-			<div class="col-12">
-
-				<h2 class="section-title font-weight--black">
-					Testimonials
-				</h2>
-			</div>
-		</div>
-
-		<div class="row">
-
-			<!-- loop -->
-			<?php if(have_rows( 'testemonials' )) : 
-					while(have_rows( 'testemonials' )) : the_row(); 
-			?>
-			<div class="col-12 box-shadow-folk mb-5 py-5 px-md-7" data-aos="fade-up">
-
-				<div class="row">
-
-					<div class="col-md-4 col-lg-3">
-						<img 
-						class="img-fluid d-block mx-auto mx-md-0"
-						src="<?= get_sub_field('photo') ?>"
-						alt="<?= get_sub_field('name') ?>">
-					</div>
-
-					<div class="col-8 d-none d-md-flex d-lg-none flex-column justify-content-center">
-						<h5 class="testemonials--name font-weight--medium">
-							<?= get_sub_field('name') ?>
-						</h5>
-
-						<p class="testemonials--subject-matter font-weight--regular text-uppercase">
-							<?= get_sub_field('title') ?>
-						</p>
-					</div>
-
-					<div class="col-lg-9 mt-5 mt-lg-0">
-
-						<h5 class="testemonials--name font-weight--medium d-md-none d-lg-block">
-							<?= get_sub_field('name') ?>
-						</h5>
-
-						<p class="testemonials--subject-matter font-weight--regular text-uppercase d-md-none d-lg-block">
-							<?= get_sub_field('title') ?>
-						</p>
-
-						<p class="post--text font-weight--regular">
-							<?= get_sub_field('testemonial') ?>
-						</p>
-					</div>
-				</div>
-			</div>
-			<?php endwhile; 
-				endif; 
-			?>
-			<!-- end loop -->
-		</div>
-	</div>
-</section>
+<?php echo get_template_part( 'template-parts/content', 'testimonials' ) ?>
 <!-- end testemonials -->
 
 <?php endwhile; ?>

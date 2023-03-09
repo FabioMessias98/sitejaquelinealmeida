@@ -22,6 +22,7 @@ import Aos from "aos";
   require("./components/submenu-active");
   require("./components/swiper-courses");
   require("./components/swiper-testimonials");
+  require("./components/swiper-photos");
 
   if (routes.checkRoute("about") ||
       routes.checkRoute("blog") ||
