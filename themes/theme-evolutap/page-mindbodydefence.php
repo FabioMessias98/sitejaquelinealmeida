@@ -124,8 +124,8 @@ get_header();
 			data-aos-duration="1500">
                 <img 
                 class="img-fluid w-100 h-100 u-object-fit-cover"
-                src="<?php echo get_template_directory_uri()?>/assets/public/images/the-programme-image.webp" 
-                alt="The programme">
+                src="<?php echo get_field( 'image_the_programme' ) ?>" 
+                alt="<?php the_title() ?>">
 			</div>
 
 			<div 
@@ -139,13 +139,7 @@ get_header();
 				</h3>
 
 				<span class="l-programme__text mb-6">
-					This is a resilience building programme that uses a dual approach to develop both mental and physical self-defence skills. <br><br>
-
-					8 WEEKS COURSE <br><br>
-
-					– 1 hour weekly class <br>
-					– Mindset Training Technique <br>
-					– Physical Self-Defence
+					<?php echo get_field( 'content_the_programme' ) ?>
 				</span>
 
 				<div class="row">
@@ -154,7 +148,7 @@ get_header();
 
 						<a 
 						class="l-programme__btn-quote py-4"
-						href="<?php echo get_home_url( null, 'contact' ) ?>">
+						href="<?php echo get_field( 'request_a_quote_the_programme' ) ?>">
 							Request a Quote
 						</a>
 					</div>
@@ -224,7 +218,7 @@ get_header();
 		class="row"
 		id="<?php echo sanitize_title(get_field('section_4')); ?>">
 			
-			<div class="col-12">
+			<div class="col-12 mt-5">
 
 				<h2 class="u-font-size-80 sm:u-font-size-100 xl:u-font-size-120 xxl:u-font-size-150 u-font-family-brokenz text-uppercase u-color-folk-light-purple mb-5">
 					Coaches
@@ -245,8 +239,8 @@ get_header();
 
 										<img 
 										class="img-fluid w-100"
-										src="<?php echo get_template_directory_uri()?>/assets/public/images/lorna-photo.webp"
-										alt="Lorna"
+										src="<?php echo get_sub_field( 'photo' ) ?>"
+										alt="<?php echo get_sub_field( 'coach' ) ?>"
 										data-aos="flip-left"
 										data-aos-duration="1500">
 									</div>

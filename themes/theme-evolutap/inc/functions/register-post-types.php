@@ -38,6 +38,18 @@ function testimonials_init() {
 }
 add_action( 'init', 'testimonials_init' );
 
+function photos_init() {
+    $args = array(
+        'public'       => true,
+        'label'        => 'Photos',
+        'show_in_rest' => true,
+        'supports'     => array('title', 'thumbnail'), 
+        'menu_icon'    => 'dashicons-format-gallery'
+    );
+    register_post_type('photo', $args );
+}
+add_action( 'init', 'photos_init' );
+
 function products_channel_init() {
     $args = array(
         'public' => true,

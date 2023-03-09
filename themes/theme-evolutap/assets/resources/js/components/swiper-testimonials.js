@@ -1,6 +1,6 @@
 (function() {
     const swiperTestimonials = new Swiper('.js-swiper-testimonials', {
-        slidesPerView: 2.5,
+        slidesPerView: 2.3,
         spaceBetween: 30,
 
         navigation: {
@@ -18,7 +18,7 @@
             },
 
             992: {
-                slidesPerView: 2.5
+                slidesPerView: 2.3
             }
         }
     })
