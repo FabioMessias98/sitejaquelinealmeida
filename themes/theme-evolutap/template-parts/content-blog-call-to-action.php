@@ -14,7 +14,7 @@
 		<div class="row flex-wrap justify-content-center">
 			<div class="col-xl-5 col-lg-8 col-md-10 d-flex flex-column flex-xl-wrap justify-content-xl-between justify-content-md-center">
 
-				<div class="bg-folk--white px-md-5 px-3 py-5 rounded-lg">
+				<div class="bg-folk--white px-md-5 px-3 py-6 rounded-lg">
 					<h2 class="text-uppercase color-folk--light-purple font-size-64 u-font-family-bronkz">blog</h2>
 					<p class="color-folk--purple">Lorem ipsum dolor sit amet, <br>
 					consectetur adipiscing elit, sed do <br>
@@ -23,7 +23,9 @@
 					Quis ipsum suspendisse ultrices gravida. </p>
 
 					<div class="col-md-9 col-10 px-0">
-						<a href="" class="button-cta py-3 px-5 mt-4 d-block font-size-22">Read More</a>
+						<a href="" class="button-cta py-3 px-4 mt-4 d-flex align-items-center justify-content-between font-size-22">Read More 
+							<i class="far fa-chevron-right u-font-weight-black pl-4 pr-3 font-size-30"></i>
+						</a>
 					</div>
 				</div>
 
@@ -70,7 +72,9 @@
 					</ul>
 
 					<div class="col-9 px-0">
-						<a href="" class="button-cta py-3 px-5 mt-4 d-block font-size-22">Learn More</a>
+						<a href="" class="button-cta py-3 px-5 mt-4 d-flex align-items-center justify-content-between font-size-22">Learn More
+							<i class="far fa-chevron-right u-font-weight-black pl-4 font-size-30"></i>
+						</a>
 					</div>
 				</div>
 

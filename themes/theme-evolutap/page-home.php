@@ -132,8 +132,13 @@ get_header();
 
 						<div class="d-flex align-items-center flex-column">
 							<div class="col-md-9 col-sm-12">
-								<a href="#" class="button-cta py-3 px-5 mt-4 d-block text-center">Learn more about me </a>
+								<div>
+									<a href="#" class="button-cta py-3 px-5 mt-4 d-flex align-items-center justify-content-center  text-center"> Learn more about me
+										<i class="far fa-chevron-right u-font-weight-black pr-4 pl-3 font-size-30"></i>
+									</a>
+								</div>
 							</div>
+							
 							<div class="col-md-9 col-sm-12">
 								<a href="#" class="button-cta button-cta--watch-my py-3 px-md-5 px-sm-2 mt-4 d-block text-center">Watch my Tedx session today</a>
 							</div>
@@ -837,7 +842,9 @@ data-aos-delay="500">
 	<div class="container">
 		<div class="row">
 			<div class="col-12">
-				<h2 class="md:u-font-size-84 u-font-size-52 color-folk--purple text-uppercase u-font-family-bronkz"><?php echo get_field('titulo_self_defence') ?></h2>
+				<h2 class="md:u-font-size-84 u-font-size-52 color-folk--purple text-uppercase u-font-family-bronkz">
+					<?php echo get_field('titulo_self_defence') ?>
+				</h2>
 				<span class="lg:u-font-size-30 md:u-font-size-22 text-white">
 					<?php echo get_field('descricao_self_defence') ?>
 				</span>

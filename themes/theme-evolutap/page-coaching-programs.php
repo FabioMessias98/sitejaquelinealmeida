@@ -34,7 +34,7 @@ get_header();
                     <div class="overlay--black pl-0 h-auto">
 
                         <div class="mt-0">
-                            <h1 class="header--title text-uppercase color-folk--yellow-weak u-font-size-100 xxl:u-font-size-180 u-font-family-bronkz h-auto pl-md-7 pl-5" data-aos="zoom-out">
+                            <h1 class="header--title text-uppercase color-folk--yellow-weak u-font-size-100 xxl:u-font-size-180 xl:u-font-size-143 u-font-family-bronkz h-auto pl-md-7 pl-5" data-aos="zoom-out">
                             Self defence <br>
                             for woman
                             </h1>
@@ -59,8 +59,7 @@ get_header();
                 </div>
 
                 <div class="col-lg-7 d-lg-flex d-none">
-                    <!-- <img class="w-100 object-fit-cover" src="<?= get_template_directory_uri() ?>/assets/public/images/video-banner.webp" alt="vídeo"> -->
-                    <iframe class="w-100"  src="https://www.youtube.com/embed/_mgcUf1HRmo" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                    <iframe class="w-100 pb-8 rounded-lg"  src="https://www.youtube.com/embed/_mgcUf1HRmo" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
                 </div>  
 
              </div>
