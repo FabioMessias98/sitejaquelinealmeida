@@ -31,7 +31,7 @@
 						<li class="u-list-style-none mx-3 mx-md-5">
 							<a 
 							class="u-icon__brands u-icon__instagram-square font-size-0 before::u-font-size-70 before::xxl:u-font-size-100 text-decoration-none u-color-folk-pink hover:u-color-folk-yellow"
-							href="#" 
+							href="<?php echo get_field( 'link_instagram_general_information', 'option' ) ?>" 
 							target="_blank" 
 							rel="noopener noreferrer">
 								Link instagram
@@ -41,7 +41,7 @@
 						<li class="u-list-style-none mx-3 mx-md-5">
 							<a 
 							class="u-icon__brands u-icon__linkedin font-size-0 before::u-font-size-70 before::xxl:u-font-size-100 text-decoration-none u-color-folk-purple hover:u-color-folk-yellow"
-							href="#" 
+							href="<?php echo get_field( 'link_linkedin_general_information', 'option' ) ?>" 
 							target="_blank" 
 							rel="noopener noreferrer">
 								Link linkedin
@@ -206,24 +206,6 @@
 							<?php 
 								endforeach;
 							?>
-
-							<!-- <a 
-							class="footer--items d-block font-weight--regular text-white mb-1"
-							href="#">
-								Women Martial Arts
-							</a>
-
-							<a 
-							class="footer--items d-block font-weight--regular text-white mb-1"
-							href="#">
-								Women Self Defence
-							</a>
-
-							<a 
-							class="footer--items d-block font-weight--regular text-white mb-1"
-							href="#">
-								Sports Matketing
-							</a> -->
 						</div>
 
 						<div class="col-md-6 col-lg-3 my-4 my-lg-0 pr-0">
@@ -233,13 +215,13 @@
 							</h5>
 
 							<div>
-								<a href="mailto:ja@jaquelinealmeida.com" class="footer--items font-weight--regular mb-1 pl-2 text-white" style="color:black;">
-									ja@jaquelinealmeida.com
+								<a href="<?php echo 'mailto:' . get_field( 'email_general_information', 'option' ) ?>" class="footer--items font-weight--regular mb-1 pl-2 text-white" style="color:black;">
+									<?php echo get_field( 'email_general_information', 'option' ) ?>							
 								</a>
 							</div>
 							<div>
-								<a href="tel:+3530899434826" class="footer--items font-weight--regular text-white mb-1">
-									+ 353 089 943 4826
+								<a href="<?php echo 'tel:' . get_field( 'phone_general_information', 'option' ) ?>" class="footer--items font-weight--regular text-white mb-1">
+									<?php echo get_field( 'phone_general_information', 'option' ) ?>	
 								</p>
 							</div>
 						</div>

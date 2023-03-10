@@ -167,6 +167,23 @@ function dcms_list_child_pages() {
 
 add_shortcode('dcms_childpages', 'dcms_list_child_pages');
 
+function create_page() {
+
+    if( function_exists('acf_add_options_page') ) {	
+        acf_add_options_page( 
+            array( 
+                'page_title' => 'General Information', 
+                'menu_title' => 'General Information', 
+                'menu_slug'  => 'general-information', 
+                'capability' => 'edit_posts', 
+                'position'   => '23,3', 
+                'redirect'   => false, 
+                'icon_url'   => 'dashicons-info' 
+        ));
+    }
+}
+add_action( 'init', 'create_page' );
+
 // function create_taxonomy() {
 //     register_taxonomy( 
 //         'products_courses_category', 
