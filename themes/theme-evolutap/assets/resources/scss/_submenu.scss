@@ -42,24 +42,49 @@
 		}
 	}
 
+	&--item {
+		position: relative;
+
+		&::before {
+			content: '';
+			width: 5px;
+			height: 100%;
+			top: 0;
+			right: 0;
+			position: absolute;
+			background-color: $color-folk-yellow;
+
+			@media screen and (max-width: 991px) {
+				display: none;
+			}
+		}
+
+		&:last-child {
+			&::before {
+				display: none;
+			}
+		}
+	}
+
 	&--item,
 	.page_item {
-		margin-right: 2rem;
+		padding-left: 2rem;
+		padding-right: 2rem;
 		list-style: none;
 	}
 
 	.page_item a {
 		font-weight: bold;
-		text-transform: uppercase;
 	}
 
 	&--links,
 	.page_item a {
-		font-size: 1.125rem; /* full hd 1.5625rem */
-		color: #040404;
+		font-size: 1.875rem;
+		font-family: 'Bahnschrift', sans-serif;
+		color: $color-folk-purple;
 
 		@media screen and (min-width: 1600px) {
-			font-size: 1.5625rem;
+			font-size: 2.625rem;
 		}
 
 		&:hover {

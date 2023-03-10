@@ -36,9 +36,21 @@ $utility-name: 'u-font-size';
 //query xl
 .xl\: {
     &#{$utility-name} {
+        &-96 {
+            @media screen and (min-width: 1200px) {
+                font-size: 6rem !important;
+            }
+        }
+
         &-120 {
             @media screen and (min-width: 1200px) {
                 font-size: 7.5rem !important;
+            }
+        }
+
+        &-250 {
+            @media screen and (min-width: 1200px) {
+                font-size: 15.625rem !important;
             }
         }
     }    
@@ -53,6 +65,12 @@ $utility-name: 'u-font-size';
             }
         }
 
+        &-122 {
+            @media screen and (min-width: 1600px) {
+                font-size: 7.625rem !important;
+            }
+        }
+
         &-143 {
             @media screen and (min-width: 1600px) {
                 font-size: 8.9375rem !important;
@@ -62,6 +80,12 @@ $utility-name: 'u-font-size';
         &-150 {
             @media screen and (min-width: 1600px) {
                 font-size: 9.375rem !important;
+            }
+        }
+
+        &-350 {
+            @media screen and (min-width: 1600px) {
+                font-size: 21.875rem !important;
             }
         }
     }    
