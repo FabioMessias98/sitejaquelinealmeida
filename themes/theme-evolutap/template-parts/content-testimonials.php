@@ -14,7 +14,7 @@
                             Testimonials
                         </h3>
 
-                        <div class="d-none d-lg-flex justify-content-around mt-5 pt-5 px-5">
+                        <div class="d-none d-lg-flex justify-content-around mt-5 pt-5 px-5 px-xxl-9">
                             <!-- arrows -->
                             <div class="swiper-button-prev l-testimonials__button-pattern l-testimonials__button-prev js-swiper-button-prev-testimonials"></div>
                             <div class="swiper-button-next l-testimonials__button-pattern l-testimonials__button-next js-swiper-button-next-testimonials"></div>
@@ -43,7 +43,7 @@
                                 ?>
                                             <div class="swiper-slide">
 
-                                                <div class="l-testimonials__item">
+                                                <div class="l-testimonials__item py-5 px-4">
 
                                                     <div class="l-testimonials__item__header">
 
@@ -65,24 +65,18 @@
                                                             </div>
                                                         </div>
 
-                                                        <div class="col-md-8 d-flex flex-column justify-content-center mt-3 mt-md-0 pl-0">
+                                                        <div class="col-md-8 d-flex flex-column justify-content-center mt-3 mt-md-0 pl-0 pl-xxl-3">
                                                             <h5 class="l-testimonials__item__name mb-0">
-                                                                <!-- Cristina Simões -->
                                                                 <?php the_title() ?>
                                                             </h5>
 
                                                             <p class="l-testimonials__item__occupation mb-0">
-                                                                <!-- occupation -->
                                                                 <?php echo get_field( 'occupation' ) ?>
                                                             </p>
                                                         </div>
                                                     </div>
 
-                                                    <div class="l-testimonials__item__body pt-4">
-                                                        <!-- <p class="l-testimonials__item__description mb-4">
-                                                            “Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ip...”
-                                                        </p> -->
-
+                                                    <div class="l-testimonials__item__body pt-4 px-xxl-3">
                                                         <span class="l-testimonials__item__description d-block mb-4">
                                                             <?php echo limit_words( get_field( 'testimony' ), 20) ?>
                                                         </span>

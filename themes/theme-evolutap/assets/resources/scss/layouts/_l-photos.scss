@@ -34,6 +34,10 @@ $layout-name: 'l-photos';
                 font-family: 'Font Awesome 5 Free';
                 color: $color-folk-pink;
             }
+
+            @media screen and (max-width: 991px) {
+                display: none;
+            }
         }
 
         .swiper-button-prev {

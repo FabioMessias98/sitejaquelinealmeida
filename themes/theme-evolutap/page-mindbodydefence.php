@@ -283,7 +283,7 @@ id="photos">
 
 			<div class="col-12 mt-5">
 
-				<h2 class="u-font-size-80 sm:u-font-size-100 xl:u-font-size-120 xxl:u-font-size-150 u-font-family-brokenz text-uppercase u-color-folk-light-purple ml-5">
+				<h2 class="u-font-size-80 sm:u-font-size-100 xl:u-font-size-120 xxl:u-font-size-150 u-font-family-brokenz text-uppercase u-color-folk-light-purple ml-sm-5">
 					Photos
 				</h2>
 
@@ -393,9 +393,9 @@ id="photos">
 
 				<div class="row justify-content-center">
 
-					<div class="col-4">
+					<div class="col-sm-6 col-md-4 col-xxl-3">
 						<a
-						class="w-100 u-border-radius-8 d-block u-font-size-32 u-font-family-bahnschrift text-center u-color-folk-white u-bg-folk-pink hover:u-bg-folk-light-purple py-2" 
+						class="w-100 u-border-radius-8 d-block u-font-size-26 lg:u-font-size-32 xxl:u-font-size-42 u-font-family-bahnschrift text-center u-color-folk-white u-bg-folk-pink hover:u-bg-folk-light-purple py-2 py-xxl-4" 
 						href="#">
 							View More
 						</a>
