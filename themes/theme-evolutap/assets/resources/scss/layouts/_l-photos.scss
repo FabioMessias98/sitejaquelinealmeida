@@ -5,6 +5,7 @@ $layout-name: 'l-photos';
     
     .swiper-container {
         .swiper-slide {
+            height: unset;
             border-radius: 8px;
             overflow: hidden;
 

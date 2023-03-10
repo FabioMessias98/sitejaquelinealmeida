@@ -105,7 +105,7 @@ get_header();
 <!-- end submenu -->
 
 <!-- program -->
-<section class="l-programme mt-6 pl-6">
+<section class="l-programme mt-6 pl-sm-5 pl-md-6">
 	
 	<div class="container">
 		
@@ -113,7 +113,7 @@ get_header();
 
 			<div class="col-12">
 
-				<h2 class="u-font-size-80 sm:u-font-size-100 xl:u-font-size-120 xxl:u-font-size-150 u-font-family-brokenz text-uppercase u-color-folk-light-purple mb-5">
+				<h2 class="u-line-height-100 u-font-size-80 sm:u-font-size-100 xl:u-font-size-120 xxl:u-font-size-150 u-font-family-brokenz text-uppercase u-color-folk-light-purple mb-5">
 					Express your Confidence
 				</h2>
 			</div>
@@ -129,7 +129,7 @@ get_header();
 			</div>
 
 			<div 
-			class="col-lg-6 box-shadow-folk mt-5 mt-sm-0 py-md-5 pl-md-5" 
+			class="col-lg-6 box-shadow-folk mt-5 mt-sm-0 py-5 pl-md-5" 
 			data-aos="fade-left" 
 			data-aos-duration="1500" 
 			id="<?php echo sanitize_title(get_field('section_2')); ?>">
@@ -144,7 +144,7 @@ get_header();
 
 				<div class="row">
 
-					<div class="col-7">
+					<div class="col-sm-8 col-xl-7">
 
 						<a 
 						class="l-programme__btn-quote py-4"
@@ -169,8 +169,8 @@ get_header();
 		class="row"
 		id="<?php echo sanitize_title(get_field('section_3')); ?>">
 			
-			<div class="col-12">
-				<h2 class="u-font-size-80 sm:u-font-size-100 xl:u-font-size-120 xxl:u-font-size-150 u-font-family-brokenz text-uppercase u-color-folk-light-purple mb-5">
+			<div class="col-12 mt-8">
+				<h2 class="u-line-height-100 u-font-size-80 sm:u-font-size-100 xl:u-font-size-120 xxl:u-font-size-150 u-font-family-brokenz text-uppercase u-color-folk-light-purple mb-5">
 					Programme Timeline
 				</h2>
 			</div>
@@ -195,7 +195,7 @@ get_header();
 									</div>
 								</div>
 
-								<div class="col-md-10 py-2 pl-5">
+								<div class="col-md-10 py-2 pl-md-5">
 
 									<h6 class="l-programme__timeline__title mb-0">
 										<?php echo get_sub_field( 'title' ) ?> <br>
@@ -235,10 +235,10 @@ get_header();
 
 								<div class="row">
 
-									<div class="l-programme__coaches__item-child col-md-6 pt-3 px-0">
+									<div class="l-programme__coaches__item-child col-xl-6 pt-3 px-xl-0">
 
 										<img 
-										class="img-fluid w-100"
+										class="img-fluid w-100 h-100"
 										src="<?php echo get_sub_field( 'photo' ) ?>"
 										alt="<?php echo get_sub_field( 'coach' ) ?>"
 										data-aos="flip-left"
@@ -246,24 +246,17 @@ get_header();
 									</div>
 
 									<div 
-									class="l-programme__coaches__item-child col-md-6 mt-5 mt-md-0 pt-5 px-0" 
+									class="l-programme__coaches__item-child col-xl-6 mt-lg-5 mt-md-0 pt-lg-5 px-xl-0" 
 									data-aos="fade-up">
 
-										<div class="l-programme__coaches__content pt-4 pl-5 pr-4">
+										<div class="l-programme__coaches__content pt-4 px-3 pl-md-5 pr-md-4">
 											<h4 class="l-programme__coaches__title">
-												Lorna Lawless
+												<?php echo get_sub_field( 'coach' ) ?>
 											</h4>
 
-											<p class="l-programme__coaches__text">
-												Lorna Lawless is a Coaching Psychologist and creator of Next Level Coaching. She holds a first-class honours M.A. in Coaching Psychology from University College Cork and a BSc in Psychology from the Open University. She is a graduate member of the Psychological Society of Ireland (PSI), the association for Coaching & the Secretary for the Coaching Psychology SIG in PSI. She has worked as a mindset coach in SBG Ireland and is currently researching women’s mental toughness through using combat sports.
-
-												<br><br>
-
-												<strong>LORNA`S COACHING EXPERTISE</strong> <br><br>
-
-												– Mental Toughness <br>
-												– Emotional Intelligence
-											</p>
+											<span class="l-programme__coaches__text">
+												<?php echo get_sub_field( 'content' ) ?>
+											</span>
 										</div>
 									</div>
 								</div>
@@ -300,15 +293,38 @@ id="photos">
 					<div class="swiper-wrapper">
 
 						<!-- slide -->
-						<?php for( $i = 0; $i < 10; $i++ ) : ?>
-							<div class="swiper-slide">
+						<?php
+							$args = array( 
+								'posts_per_page' => -1,
+								'post_type'      => 'photo',
+								'order'          => 'DESC'
+							);
 
-								<img
-								class="img-fluid w-100"
-								src="http://evolutap.test/wordpress/jaquelinealmeidaupdate/wp-content/uploads/2020/12/img-photo-1.png"
-								alt="Photo 01">
-							</div>
-						<?php endfor; ?>
+							$photos = new WP_Query( $args );
+
+							if( $photos->have_posts() ) :
+								while( $photos->have_posts() ) : $photos->the_post();
+						?>
+									<div class="swiper-slide">
+
+										<?php
+											the_post_thumbnail( 'post-thumbnail',
+												array(
+													'class' => 'img-fluid w-100 h-100',
+													'alt'   => get_the_title()
+											));
+										?>
+										<!-- <img
+										class="img-fluid w-100"
+										src="http://evolutap.test/wordpress/jaquelinealmeidaupdate/wp-content/uploads/2020/12/img-photo-1.png"
+										alt="Photo 01"> -->
+									</div>
+						<?php 
+								endwhile;
+							endif;
+							
+							wp_reset_query();
+						?>
 						<!-- end slide -->
 					</div>
 

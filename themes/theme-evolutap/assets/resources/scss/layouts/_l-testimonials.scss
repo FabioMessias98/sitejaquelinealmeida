@@ -10,6 +10,11 @@ $layout-name: 'l-testimonials';
         padding-left: 2rem;
     }
 
+    @media screen and (max-width: 575px) {
+        margin-left: 0;
+        padding-left: 1rem;
+    }
+
     &__swiper {
         border-top-left-radius: 10px;
         border-bottom-left-radius: 10px;

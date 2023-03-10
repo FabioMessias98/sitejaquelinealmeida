@@ -15,9 +15,9 @@ get_header();
 <?php if (have_posts()) : while (have_posts()) : the_post(); ?>
 
 <!-- <picture>
-<source srcset="<?= get_template_directory_uri() ?>/assets/public/images/blog-1.webp" type="image/webp">
-<source srcset="<?= get_template_directory_uri() ?>/assets/public/images/blog-1.png" type="image/png">
-<img src="<?= get_template_directory_uri() ?>/assets/public/images/blog-1.png" alt="">
+<source srcset="<= get_template_directory_uri() ?>/assets/public/images/blog-1.webp" type="image/webp">
+<source srcset="<= get_template_directory_uri() ?>/assets/public/images/blog-1.png" type="image/png">
+<img src="<= get_template_directory_uri() ?>/assets/public/images/blog-1.png" alt="">
 </picture> -->
 
 <!-- banner social -->
@@ -26,7 +26,7 @@ get_header();
     <div class="row">
 		
 		<!-- sidebar social -->    
-        <?= get_template_part('template-parts/content-sidebar-social') ?>
+        <?php echo get_template_part('template-parts/content-sidebar-social') ?>
         <!-- end sidebar social -->
 
         <div class="header--col d-none d-md-block">
@@ -42,16 +42,16 @@ get_header();
 
 	                    <picture>
 	                        <source 
-	                        srcset="<?= get_template_directory_uri() ?>/assets/public/images/banner-jaqueline.webp" 
+	                        srcset="<?php echo get_template_directory_uri() ?>/assets/public/images/banner-jaqueline.webp" 
 	                        type="image/webp" loading="lazy" decoding="async">
 	                        
 	                        <source 
-	                        srcset="<?= get_template_directory_uri() ?>/assets/public/images/banner-jaqueline.png" 
+	                        srcset="<?php echo get_template_directory_uri() ?>/assets/public/images/banner-jaqueline.png" 
 	                        type="image/png">
 	                        
 	                        <img 
 	                        class="header--banner"
-	                        src="<?= get_template_directory_uri() ?>/assets/public/images/img-banner-home.png" 
+	                        src="<?php echo get_template_directory_uri() ?>/assets/public/images/img-banner-home.png" 
 	                        alt="Ícone Hamburger">
 	                    </picture>
 
@@ -101,16 +101,16 @@ get_header();
 
 						<picture>
                             <source 
-                            srcset="<?= get_template_directory_uri() ?>/assets/public/images/jaque-medal-gold.webp" 
+                            srcset="<?php echo get_template_directory_uri() ?>/assets/public/images/jaque-medal-gold.webp" 
                             type="image/webp">
                             
                             <source 
-                            srcset="<?= get_template_directory_uri() ?>/assets/public/images/jaque-medal-gold.png" 
+                            srcset="<?php echo get_template_directory_uri() ?>/assets/public/images/jaque-medal-gold.png" 
                             type="image/png">
                             
                             <img 
                             class="img-fluid"
-                            src="<?= get_template_directory_uri() ?>/assets/public/images/img-feature.png" 
+                            src="<?php echo get_template_directory_uri() ?>/assets/public/images/img-feature.png" 
                             alt="Ícone Hamburger">
                         </picture>
 					</div>
@@ -158,8 +158,8 @@ get_header();
 							?>
 									<a 
 									class="feature--text d-block font-weight--black text-uppercase color-folk--strong-black"
-									href="<?= get_term_link($term->term_id) ?>">
-										- women: <?= $term->name; ?>
+									href="<?php echo get_term_link($term->term_id) ?>">
+										- women: <?php echo $term->name; ?>
 									</a>
 							<?php 
 								endforeach;
@@ -167,7 +167,7 @@ get_header();
 
 							<a
 							class="btn btn--pattern icon-folk icon-folk--arrow-right font-weight--black bg-folk--yellow mt-6 ml-md-3"
-							href="<?= get_home_url(null, 'blog') ?>">
+							href="<?php echo get_home_url(null, 'blog') ?>">
 								see all
 
 								<span class="btn--line-bottom"></span>
@@ -328,7 +328,7 @@ data-aos-delay="500">
 
 										<?php else: ?>
 											<div>
-												<?= get_sub_field('video') ?>
+												<?php echo get_sub_field('video') ?>
 											</div>
 
 										<?php 		endif;
@@ -341,12 +341,12 @@ data-aos-delay="500">
 
 										<h4 class="training--title color-folk--strong-black mb-4">
 											<!-- get_sub_field('titulo') -->
-											<?= the_title() ?>
+											<?php echo the_title() ?>
 										</h4>
 									
 										<p class="training--phrase">
 											<!-- get_sub_field('conteudo') -->
-											<?= the_excerpt() ?>
+											<?php echo the_excerpt() ?>
 										</p>
 								
 									</div>
@@ -411,7 +411,7 @@ data-aos-delay="500">
 
 									<div class="card-body p-0">
 										<h4 class="channel--model-2-title font-weight--black text-center">
-											<?= get_sub_field('title') ?>
+											<?php echo get_sub_field('title') ?>
 										</h4>
 
 										<p class="channel--model-2-subtitle font-weight-bold text-center text-uppercase mb-0 pt-6">
@@ -427,7 +427,7 @@ data-aos-delay="500">
 										<div class="channel--model-2-box-img">
 											<img 
 											class="img-fluid"
-											src="<?= get_sub_field('photo') ?>"
+											src="<?php echo get_sub_field('photo') ?>"
 											alt="">
 										</div>
 										<?php endwhile; 
@@ -438,14 +438,14 @@ data-aos-delay="500">
 
 									<div class="card-body py-0">
 										<span class="training--phrase d-block font-weight--regular">
-											<?= get_sub_field('content') ?> 
+											<?php echo get_sub_field('content') ?> 
 										</span>
 									</div>
 
 									<div class="card-footer border-top-0 bg-folk--none mt-6 mb-8 px-1 px-lg-4">
 										<a
 										class="btn btn--pattern icon-folk icon-folk--arrow-right icon-folk--invert font-weight--black text-white bg-folk--black"
-										href="<?= get_sub_field('learn') ?>">
+										href="<?php echo get_sub_field('learn') ?>">
 											learn more
 
 											<span class="btn--line-bottom"></span>
@@ -492,7 +492,7 @@ data-aos-delay="500">
 					                    while( $photos->have_posts() ): $photos->the_post();	
 								?>
 										<div class="swiper-slide swiper-slide-photos align-items-end">
-											<a class="d-flex" href="<?= get_home_url(null, 'photos') ?>">
+											<a class="d-flex" href="<?php echo get_home_url(null, 'photos') ?>">
 												<?php
 													$altTitle = get_the_title();
 													the_post_thumbnail('post-thumbnail', 
@@ -526,9 +526,9 @@ data-aos-delay="500">
 											<div class="col-md-6 channel--model-5--col mb-3 mb-md-0">
 												<img
 												class="channel--model-5--overlay-video img-fluid object-fit-cover" 
-												src="<?= get_sub_field('thumbnail') ?>">
+												src="<?php echo get_sub_field('thumbnail') ?>">
 
-								                <?= get_sub_field('video') ?>
+								                <?php echo get_sub_field('video') ?>
 											</div>
 					<?php               endwhile;
 									endif; 	
@@ -568,12 +568,12 @@ data-aos-delay="500">
 
 								<!-- <img 
 								class="img-fluid"
-								src="<?= get_template_directory_uri()?>/assets/public/images/img-women-channel-1.webp"
+								src="<?php echo get_template_directory_uri()?>/assets/public/images/img-women-channel-1.webp"
 								alt="Jiu Jitsu Mobility"> -->
 
 								<img 
 								class="img-fluid"
-								src="<?= get_sub_field('imagem') ?>"
+								src="<?php echo get_sub_field('imagem') ?>"
 								alt="">
 							</div>
 
@@ -583,13 +583,13 @@ data-aos-delay="500">
 									<!-- How I felt Inspired When
 									I`ve lost Motivation -->
 
-									<?= get_sub_field('titulo') ?>
+									<?php echo get_sub_field('titulo') ?>
 								</h4>
 							
 								<p class="training--phrase">
 									<!-- The standard Lorem Ipsum passage, used since the 1500s“Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum […] -->
 
-									<?= get_sub_field('conteudo') ?>
+									<?php echo get_sub_field('conteudo') ?>
 								</p>
 						
 							</div>
@@ -597,7 +597,7 @@ data-aos-delay="500">
 							<div class="card-footer border-top-0 bg-folk--white mt-8 px-1 px-lg-4">
 								<a
 								class="btn btn--pattern icon-folk icon-folk--arrow-right font-weight--black bg-folk--yellow"
-								href="<?= get_sub_field('link') ?>">
+								href="<?php echo get_sub_field('link') ?>">
 									read more
 
 									<span class="btn--line-bottom"></span>
@@ -621,7 +621,7 @@ data-aos-delay="500">
 							<div class="card-body px-0">
 								<h4 class="channel--model-2-title font-weight--black text-center">
 									<!-- Mind & Body -->
-									<?= get_sub_field('title') ?>
+									<?php echo get_sub_field('title') ?>
 								</h4>
 
 								<p class="channel--model-2-subtitle font-weight-bold text-center text-uppercase pt-6 pb-4">
@@ -637,12 +637,12 @@ data-aos-delay="500">
 								<div class="channel--model-2-box-img">
 									<!-- <img 
 									class="img-fluid"
-									src="<?= get_template_directory_uri()?>/assets/public/images/img-lorna-lawless-radius.webp"
+									src="<?php echo get_template_directory_uri()?>/assets/public/images/img-lorna-lawless-radius.webp"
 									alt=""> -->
 
 									<img 
 									class="img-fluid"
-									src="<?= get_sub_field('photo') ?>"
+									src="<?php echo get_sub_field('photo') ?>"
 									alt="">
 								</div>
 								<?php endwhile; 
@@ -652,7 +652,7 @@ data-aos-delay="500">
 								<!-- <div class="channel--model-2-box-img">
 									<img 
 									class="img-fluid"
-									src="<?= get_template_directory_uri()?>/assets/public/images/img-jaqueline-almeida-radius.webp"
+									src="<?php echo get_template_directory_uri()?>/assets/public/images/img-jaqueline-almeida-radius.webp"
 									alt="">
 								</div> -->
 							</div>
@@ -665,14 +665,14 @@ data-aos-delay="500">
 									magna aliquam erat volutpat. Ut wisi enim
 									ad minim veniam, quis nostrud.  -->
 
-									<?= get_sub_field('content') ?> 
+									<?php echo get_sub_field('content') ?> 
 								</p>
 							</div>
 
 							<div class="card-footer border-top-0 bg-folk--none mt-6 mb-9 px-1 px-lg-4">
 								<a
 								class="btn btn--pattern icon-folk icon-folk--arrow-right icon-folk--invert font-weight--black text-white bg-folk--black"
-								href="<?= get_sub_field('learn') ?>">
+								href="<?php echo get_sub_field('learn') ?>">
 									learn more
 
 									<span class="btn--line-bottom"></span>
@@ -719,7 +719,7 @@ data-aos-delay="500">
 					<!-- model 4 -->
 					<div 
 					class="channel--item channel--model-4"
-					style="background-image: url(<?= get_template_directory_uri()?>/assets/public/images/img-4-channel.webp);">
+					style="background-image: url(<?php echo get_template_directory_uri()?>/assets/public/images/img-4-channel.webp);">
 					</div>
 					<!-- model 4 -->
 
@@ -728,11 +728,11 @@ data-aos-delay="500">
 
 						<span 
 						class="channel--model-5--overlay-video"
-						style="background-image: url(<?= get_template_directory_uri()?>/assets/public/images/img-5-channel.webp)"></span>
+						style="background-image: url(<?php echo get_template_directory_uri()?>/assets/public/images/img-5-channel.webp)"></span>
 
 		                <!-- <iframe class="channel--model-5--video" src="https://www.youtube.com/embed/Utx7u5ygSbo" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe> -->
 
-		                <?= get_sub_field('video') ?>
+		                <?php echo get_sub_field('video') ?>
 					</div>
 					<!-- end model 5 -->
 				</div>
@@ -774,7 +774,8 @@ data-aos-delay="500">
 
 		<div class="row justify-content-between">
 
-			<?php $args = array(
+			<?php 
+				$args = array(
 					'posts_per_page' => 2,
 					'post_type'      => 'story',
 					'order'        => 'DESC',
@@ -785,34 +786,37 @@ data-aos-delay="500">
 				if( $stories->have_posts() ) : 
                     while( $stories->have_posts() ): $stories->the_post();
 			?>
-					<div 
-					class="history--col my-4" 
-					data-aos="zoom-out"
-					data-aos-duration="500"
-					data-aos-delay="300">
+						<div 
+						class="history--col my-4" 
+						data-aos="zoom-out"
+						data-aos-duration="500"
+						data-aos-delay="300">
 
-						<a 
-						class="card border-0 rounded-0 box-shadow-folk px-0 px-md-3"
-						href="<?= get_permalink($story->ID) ?>">
+							<a 
+							class="card border-0 rounded-0 box-shadow-folk px-0 px-md-3"
+							href="<?php echo get_permalink($story->ID) ?>">
 
-							<div class="card-body py-5">
+								<div class="card-body py-5">
 
-								<h4 class="history--title mb-3">
-									<?= the_title() ?>
-								</h4>
+									<h4 class="history--title mb-3">
+										<?php the_title() ?>
+									</h4>
 
-								<span class="history--text d-block">
-									<?= the_excerpt() ?>
-								</span>
+									<span class="history--text d-block">
+										<?php the_excerpt() ?>
+									</span>
 
-								<p class="history--by font-weight--medium">
-									<?= get_field('by') ?>
-								</p>
-							</div>
-						</a>
-					</div>
-			<?php endwhile; 
+									<p class="history--by font-weight--medium">
+										<?php echo get_field('by') ?>
+									</p>
+								</div>
+							</a>
+						</div>
+			<?php 
+					endwhile; 
 				endif;
+
+				wp_reset_query();
 			?>
 		</div>
 
@@ -821,7 +825,7 @@ data-aos-delay="500">
 			<div class="col-md-6 d-flex justify-content-end">
 				<a
 				class="btn btn--pattern icon-folk icon-folk--arrow-right icon-folk--invert font-weight--black text-white bg-folk--black mt-5 ml-sm-3"
-				href="<?= get_home_url(null, 'help-and-empower') ?>">
+				href="<?php echo get_home_url(null, 'help-and-empower') ?>">
 					share yours	
 
 					<span class="btn--line-bottom"></span>	
@@ -846,54 +850,40 @@ data-aos-delay="500">
 	</div>
 
 	<div class="col-12">
+
 		<div class="swiper-container swiper-defence-videos">
+
 			<div class="swiper-wrapper">
 
-			<!-- <php 
-				if(have_rows('videos_self_defence')):
-					while(have_rows('videos_self_defence')): the_row();
-       		 ?>
-
-				<div class="swiper-slide">
-					<iframe class="w-100 rounded-lg' rounded-lg" height="315" src="<php echo get_sub_field('videos_defence') ?>" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-				</div>
-
-				<php 
-					endwhile;
-				endif;
-       			 ?> -->
-
-
-				<!-- <div class="swiper-slide">
-					<iframe class="w-100 rounded-lg'" height="315" src="https://www.youtube.com/embed/OpRo0IHZi7w" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-				</div>
-				<div class="swiper-slide">
-					<iframe class="w-100 rounded-lg'" height="315" src="https://www.youtube.com/embed/OpRo0IHZi7w" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-				</div>
-				<div class="swiper-slide">
-					<iframe class="w-100 rounded-lg'" height="315" src="https://www.youtube.com/embed/OpRo0IHZi7w" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-				</div>
-				<div class="swiper-slide">
-					<iframe class="w-100 rounded-lg'" height="315" src="https://www.youtube.com/embed/OpRo0IHZi7w" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-				</div>
-				<div class="swiper-slide">
-					<iframe class="w-100 rounded-lg'" height="315" src="https://www.youtube.com/embed/OpRo0IHZi7w" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-				</div> -->
+				<?php 
+					if(have_rows('videos_self_defence')) :
+						while(have_rows('videos_self_defence')) : the_row();
+				?>
+							<div class="swiper-slide">
+								<iframe class="w-100 rounded-lg' rounded-lg" height="315" src="<?php echo get_sub_field('videos_defence') ?>" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+							</div>
+				<?php 
+						endwhile;
+					endif;
+				?>
 			</div>
+
 			<div class="swiper-button-prev swiper-button-prev-defence-videos"></div>
 			<div class="swiper-button-next swiper-button-next-defence-videos"></div>
 		</div>
 	</div>
 
 	<div class="w-100 d-flex justify-content-center">
+		
 		<div class="col-md-4 col-8">
-			<a href="#" class="button-cta button-cta--watch-now py-3 px-2 d-block mt-11 font-size-22  text-center">Watch Now</a>
+			<a 
+			class="button-cta button-cta--watch-now py-3 px-2 d-block mt-11 font-size-22  text-center"
+			href="#">
+				Watch Now
+			</a>
 		</div>
 	</div>
 </section>
-
-
-
 <!-- END SELF DEFENCE WATCH NOW -->
 
 <!-- survey -->
@@ -910,16 +900,16 @@ data-aos-delay="500">
 					<div class="col-lg-5 d-lg-flex justify-content-center align-items-center">
 						<picture>
                             <source 
-                            srcset="<?= get_template_directory_uri() ?>/assets/public/images/img-women-survey.webp" 
+                            srcset="<?php echo get_template_directory_uri() ?>/assets/public/images/img-women-survey.webp" 
                             type="image/webp">
                             
                             <source 
-                            srcset="<?= get_template_directory_uri() ?>/assets/public/images/img-women-survey.png" 
+                            srcset="<?php echo get_template_directory_uri() ?>/assets/public/images/img-women-survey.png" 
                             type="image/png">
                             
                             <img 
                             class="img-fluid w-100"
-                            src="<?= get_template_directory_uri() ?>/assets/public/images/img-women-survey.png" 
+                            src="<?php echo get_template_directory_uri() ?>/assets/public/images/img-women-survey.png" 
                             alt="Women Survey">
                         </picture>
 					</div>
@@ -992,7 +982,7 @@ data-aos-delay="500">
 							<div class="card-img">
 								<img 
 								class="img-fluid"
-								src="<?= get_template_directory_uri()?>/assets/public/images/img-jiu-jitsu-mobility.webp"
+								src="<?php echo get_template_directory_uri()?>/assets/public/images/img-jiu-jitsu-mobility.webp"
 								alt="Jiu Jitsu Mobility">
 							</div>
 
@@ -1035,7 +1025,7 @@ data-aos-delay="500">
 							<div class="card-img">
 								<img 
 								class="img-fluid"
-								src="<?= get_template_directory_uri()?>/assets/public/images/img-rashguard.webp"
+								src="<?php echo get_template_directory_uri()?>/assets/public/images/img-rashguard.webp"
 								alt="Rashgaurd">
 							</div>
 
