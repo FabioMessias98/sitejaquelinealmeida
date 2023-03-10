@@ -12,7 +12,7 @@
 
 	<div class="container">
 		<div class="row flex-wrap justify-content-center">
-			<div class="col-xl-5 col-lg-8 col-md-10 d-flex flex-column flex-xl-wrap justify-content-xl-between justify-content-md-center">
+			<div class="col-xxl-4 col-xl-5 col-lg-8 col-md-10 d-flex flex-column flex-xl-wrap justify-content-xl-between justify-content-md-center">
 
 				<div class="bg-folk--white px-md-5 px-3 py-6 rounded-lg">
 					<h2 class="text-uppercase color-folk--light-purple font-size-64 u-font-family-bronkz">blog</h2>
@@ -23,7 +23,7 @@
 					Quis ipsum suspendisse ultrices gravida. </p>
 
 					<div class="col-md-9 col-10 px-0">
-						<a href="" class="button-cta py-3 px-4 mt-4 d-flex align-items-center justify-content-between font-size-22">Read More 
+						<a href="../page-blog.php" class="button-cta py-3 px-4 mt-4 d-flex align-items-center justify-content-between font-size-22">Read More 
 							<i class="far fa-chevron-right u-font-weight-black pl-4 pr-3 font-size-30"></i>
 						</a>
 					</div>
@@ -44,7 +44,7 @@
 				
 			</div>
 
-			<div class="col-xl-5 col-lg-8 col-md-10 flex-lg-column justify-content-md-center">
+			<div class="col-xxl-4 col-xl-5 col-lg-8 col-md-10 flex-lg-column justify-content-md-center">
 				<style>
 					.banner-position-guard {
 						background-image: url("<?php echo get_template_directory_uri() ?>/assets/public/images/jaque-position-guard.png");
@@ -71,7 +71,7 @@
 						<li class="color-folk--purple u-font-weight-bold">- Physical <br> Self-Defence </li>
 					</ul>
 
-					<div class="col-9 px-0">
+					<div class="col-md-9 col-12 px-0">
 						<a href="" class="button-cta py-3 px-5 mt-4 d-flex align-items-center justify-content-between font-size-22">Learn More
 							<i class="far fa-chevron-right u-font-weight-black pl-4 font-size-30"></i>
 						</a>

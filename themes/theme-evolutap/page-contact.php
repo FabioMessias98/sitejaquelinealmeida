@@ -53,8 +53,8 @@ while ( have_posts() ) : the_post(); ?>
 	                        alt="Ícone Hamburger">
 	                    </picture>
 
-	                    <div class="header--box-content d-flex justify-content-start pl-5 mt-0">
-	                		<h1 class="text-center text-uppercase color-folk--yellow-weak lg:u-font-size-220 md:u-font-size-161 u-font-size-120 u-font-family-bronkz aos-init aos-animate"
+	                    <div class="header--box-content d-flex justify-content-start pl-md-5 pl-0 mt-0">
+	                		<h1 class="text-center text-uppercase color-folk--yellow-weak xxl:u-font-size-233 lg:u-font-size-220 md:u-font-size-161 u-font-size-120 u-font-family-bronkz aos-init aos-animate"
 	                		data-aos="zoom-out">
 							contact us
 	                		</h1>

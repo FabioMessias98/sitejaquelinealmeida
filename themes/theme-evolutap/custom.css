@@ -51,4 +51,14 @@ input::placeholder{
     content: '\f054';
 }
 
+.swiper-button-prev {
+    left: 70px;
+    right: auto;
+}
+
+.swiper-button-next {
+    right: 70px;
+    left: auto;
+}
+
 

@@ -97,7 +97,7 @@ get_header();
 
 				<div class="row">
 
-					<div class="col-xl-5 col-md-12 d-md-flex justify-content-md-center pr-md-0 pl-md-2 pl-sm-0">
+					<div class="col-xxl-6 col-xl-5 col-md-12 d-md-flex justify-content-md-center pr-md-0 pl-md-2 pl-sm-0">
 
 						<picture>
                             <source 
@@ -116,7 +116,7 @@ get_header();
 					</div>
 
 					<div 
-					class="col-xl-6 col-lg-12 d-lg-flex justify-content-lg-center mt-xl-5 mt-sm-0 px-0"
+					class="col-xxl-4 col-xl-6 col-lg-12 d-lg-flex justify-content-lg-center mt-xl-5 mt-sm-0 px-0"
 					data-aos="fade-up" data-aos-duration="1500">
 
 					<div class="mt-12 bg-folk--white pl-5 pr-3 pb-xl-0 pb-4">
@@ -131,9 +131,9 @@ get_header();
 						</p>
 
 						<div class="d-flex align-items-center flex-column">
-							<div class="col-md-9 col-sm-12">
+							<div class="col-md-9 col-12">
 								<div>
-									<a href="#" class="button-cta py-3 px-5 mt-4 d-flex align-items-center justify-content-center  text-center"> Learn more about me
+									<a href="#" class="button-cta py-3 px-md-5 px-2 mt-4 d-flex align-items-center justify-content-center  text-center"> Learn more about me
 										<i class="far fa-chevron-right u-font-weight-black pr-4 pl-3 font-size-30"></i>
 									</a>
 								</div>
@@ -193,7 +193,7 @@ data-aos="fade-up"
 data-aos-duration="2000"
 data-aos-delay="500">
 
-	<div class="container">
+	<div class="container px-xxl-7">
 		
 		<div class="row">
 
