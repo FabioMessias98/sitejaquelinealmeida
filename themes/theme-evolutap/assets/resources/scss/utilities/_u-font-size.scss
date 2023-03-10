@@ -66,3 +66,25 @@ $utility-name: 'u-font-size';
         }
     }    
 }
+
+.before\:\: {
+    &#{$utility-name} {
+        &-70 {
+            &::before {
+                font-size: 4.375rem !important;
+            }
+        }
+    }
+
+    &xxl\: {
+        &#{$utility-name} {
+            &-100 {
+                @media screen and (min-width: 1600px) {
+                    &::before {
+                        font-size: 6.25rem !important;
+                    }
+                }
+            }
+        }
+    }
+}
