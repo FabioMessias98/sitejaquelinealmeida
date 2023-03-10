@@ -238,7 +238,7 @@ get_header();
 									<div class="l-programme__coaches__item-child col-xl-6 pt-3 px-xl-0">
 
 										<img 
-										class="img-fluid w-100 h-100"
+										class="img-fluid w-100 h-100 u-object-fit-cover"
 										src="<?php echo get_sub_field( 'photo' ) ?>"
 										alt="<?php echo get_sub_field( 'coach' ) ?>"
 										data-aos="flip-left"
