@@ -21,7 +21,7 @@ get_header();
 <?php while ( have_posts() ) : the_post(); ?>
 
 <!-- banner social -->
-<div class="banner-social container-fluid">
+<div class="banner-social container-fluid d-none">
 
     <div class="row">
 		
@@ -52,6 +52,60 @@ get_header();
                 </div>
             </div>
         </div>
+	</div>
+</div>
+
+<div class="container-fluid px-0">
+
+    <div class="row">
+		
+		<!-- sidebar social -->    
+        <?= get_template_part('template-parts/content-sidebar-social') ?>
+        <!-- end sidebar social -->
+
+        <div class="header--col d-none d-md-block">
+        </div>
+
+        <div class="col-sm order-1 order-md-2">
+
+            <div class="row">
+
+                <div class="col-12 px-0">
+
+                	<div class="header--box position-relative overlay--black pl-0">
+
+	                    <picture>
+	                        <source 
+	                        srcset="<?= get_template_directory_uri() ?>/assets/public/images/mindbody-banner.webp" 
+	                        type="image/webp" loading="lazy" decoding="async">
+	                        
+	                        <source 
+	                        srcset="<?= get_template_directory_uri() ?>/assets/public/images/mindbody-banner.png" 
+	                        type="image/png">
+	                        
+	                        <img 
+	                        class="header--banner"
+	                        src="<?= get_template_directory_uri() ?>/assets/public/images/img-mindbody-banner.png" 
+	                        alt="Banner product">
+	                    </picture>
+
+	                    <div class="header--box-content d-flex flex-column mt-lg-0 xl-mt-10 pl-3 pl-sm-8">
+						
+							<h3 class="u-line-height-100 u-font-size-60 xl:u-font-size-96 xxl:u-font-size-122 u-font-family-bronkz text-uppercase u-color-folk-purple">
+								Mind & Body Defence
+							</h3>
+
+							<h1 
+							class="u-line-height-100 sm:u-font-size-75 md:u-font-size-162 xl:u-font-size-250 xxl:u-font-size-350 u-font-family-bronkz text-uppercase u-color-folk-light-purple"
+							data-aos="zoom-out">
+								programme
+							</h1>
+                		</div>
+                	</div>
+                </div>
+            </div><!-- row -->
+        </div><!-- col -->
+    </div><!-- row -->
 </div>
 <!-- end banner social -->
 
@@ -64,9 +118,9 @@ get_header();
 		class="submenu--item my-3 my-md-0" 
 		data-aos="fade-left">
 			<a
-			class="submenu--links font-weight-bold text-uppercase"
+			class="submenu--links"
 			href="#">
-				about
+				About
 			</a>
 		</li>
 		<!-- end loop -->
@@ -75,9 +129,9 @@ get_header();
 		class="submenu--item my-3 my-md-0" 
 		data-aos="fade-left">
 			<a
-			class="submenu--links font-weight-bold text-uppercase"
+			class="submenu--links"
 			href="#programme">
-				programme
+				Programme
 			</a>
 		</li>
 
@@ -85,9 +139,9 @@ get_header();
 		class="submenu--item my-3 my-md-0" 
 		data-aos="fade-left">
 			<a
-			class="submenu--links font-weight-bold text-uppercase"
+			class="submenu--links"
 			href="#timeline">
-				timeline
+				Timeline
 			</a>
 		</li>
 
@@ -95,9 +149,9 @@ get_header();
 		class="submenu--item my-3 my-md-0" 
 		data-aos="fade-left">
 			<a
-			class="submenu--links font-weight-bold text-uppercase"
+			class="submenu--links"
 			href="#coaches">
-				coaches
+				Coaches
 			</a>
 		</li>
 	</ul>
@@ -238,7 +292,7 @@ get_header();
 									<div class="l-programme__coaches__item-child col-xl-6 pt-3 px-xl-0">
 
 										<img 
-										class="img-fluid w-100 h-100"
+										class="img-fluid w-100 h-100 u-object-fit-cover"
 										src="<?php echo get_sub_field( 'photo' ) ?>"
 										alt="<?php echo get_sub_field( 'coach' ) ?>"
 										data-aos="flip-left"
