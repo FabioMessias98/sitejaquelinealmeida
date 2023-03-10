@@ -5,6 +5,7 @@ $layout-name: 'l-photos';
     
     .swiper-container {
         .swiper-slide {
+            height: unset;
             border-radius: 8px;
             overflow: hidden;
 
@@ -32,6 +33,10 @@ $layout-name: 'l-photos';
                 font-weight: 900;
                 font-family: 'Font Awesome 5 Free';
                 color: $color-folk-pink;
+            }
+
+            @media screen and (max-width: 991px) {
+                display: none;
             }
         }
 

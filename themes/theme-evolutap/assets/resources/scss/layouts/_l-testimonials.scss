@@ -10,6 +10,11 @@ $layout-name: 'l-testimonials';
         padding-left: 2rem;
     }
 
+    @media screen and (max-width: 575px) {
+        margin-left: 0;
+        padding-left: 1rem;
+    }
+
     &__swiper {
         border-top-left-radius: 10px;
         border-bottom-left-radius: 10px;
@@ -24,6 +29,7 @@ $layout-name: 'l-testimonials';
                 top: 0;
                 left: 0;
                 opacity: .2;
+                display: none !important;
                 border-radius: 10px;
                 position: absolute;
                 background-color: $color-folk-white;
@@ -46,7 +52,6 @@ $layout-name: 'l-testimonials';
 
     &__item {
         height: 100%;
-        padding: 1.5rem;
         border-radius: 10px;
         background-color: #470099;
 
@@ -61,6 +66,11 @@ $layout-name: 'l-testimonials';
             border-radius: 50%;
             overflow: hidden;
 
+            @media screen and (min-width: 1600px) {
+                width: 126px;
+                height: 126px;
+            }
+
             img {
                 width: 100%;
                 max-width: 100%;
@@ -74,6 +84,10 @@ $layout-name: 'l-testimonials';
             font-weight: 700;   
             font-family: 'Bahnschrift', sans-serif;
             color: $color-folk-white;
+
+            @media screen and (min-width: 1600px) {
+                font-size: 2.375rem;
+            }
         }
 
         &__occupation {
@@ -82,6 +96,10 @@ $layout-name: 'l-testimonials';
             font-weight: 400;   
             font-family: 'Bahnschrift', sans-serif;
             color: $color-folk-white;
+
+            @media screen and (min-width: 1600px) {
+                font-size: 2rem;
+            }
         }
 
         &__description {
@@ -93,6 +111,10 @@ $layout-name: 'l-testimonials';
 
             @media screen and (max-width: 767px) {
                 font-size: 1rem;
+            }
+
+            @media screen and (min-width: 1600px) {
+                font-size: 2rem;
             }
         }
     }

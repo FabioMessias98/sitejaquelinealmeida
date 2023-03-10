@@ -5,11 +5,29 @@ $utility-name: 'u-color-folk';
         color: $color-folk-light-purple !important;
     }
 
+    &-pink {
+        color: $color-folk-pink !important;
+    }
+
+    &-purple {
+        color: $color-folk-purple !important;
+    }
+
     &-yellow {
         color: $color-folk-yellow !important;
     }
 
     &-white {
         color: $color-folk-white !important;
+    }
+}
+
+.hover\: {
+    &#{$utility-name} {
+        &-yellow {
+            &:hover {
+                color: $color-folk-yellow !important;
+            }
+        }
     }
 }

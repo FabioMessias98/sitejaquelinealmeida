@@ -9,6 +9,16 @@
         navigation: {
             prevEl: '.js-swiper-button-prev-photos',
             nextEl: '.js-swiper-button-next-photos',
+        },
+
+        breakpoints: {
+            320: {
+                slidesPerView: 1.5
+            },
+
+            992: {
+                slidesPerView: 2.5
+            }
         }
     })
 })()

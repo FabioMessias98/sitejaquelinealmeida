@@ -8,6 +8,10 @@ $layout-name: 'l-programme';
         font-family: 'BROKENZ', sans-serif;
         text-transform: uppercase;
         color: #E6D019;
+
+        @media screen and (min-width: 1600px) {
+            font-size: 8.25rem;
+        }
     }
 
    &__text {
@@ -15,6 +19,10 @@ $layout-name: 'l-programme';
         font-size: 1.75rem;
         font-family: 'Bahnschrift', sans-serif;
         color: #1E013F;
+
+        @media screen and (min-width: 1600px) {
+            font-size: 2.375rem;
+        }
     }
 
     &__btn-quote {
@@ -27,6 +35,10 @@ $layout-name: 'l-programme';
         color: $color-folk-white !important;
         background-color: #DB2FCD;
 
+        @media screen and (min-width: 1600px) {
+            font-size: 2.8125rem;
+        }
+
         &:hover {
             background-color: $color-folk-light-purple;
         }
@@ -36,6 +48,14 @@ $layout-name: 'l-programme';
         p, a {
             font-size: 1.75rem;
             font-family: 'Bahnschrift', sans-serif;
+
+            @media screen and (max-width: 767px) {
+                font-size: 1.25rem;
+            }
+
+            @media screen and (min-width: 1600px) {
+                font-size: 2.375rem;
+            }
         }
 
         h1, h2, h3, h4, h5, h6 {
@@ -94,6 +114,10 @@ $layout-name: 'l-programme';
             font-family: 'BROKENZ', sans-serif;
             text-transform: uppercase;
             color: #E6D019;
+
+            @media screen and (min-width: 1600px) {
+                font-size: 5rem;
+            }
         }
 
         &__title {
@@ -103,6 +127,17 @@ $layout-name: 'l-programme';
             font-size: 2.375rem;
             font-family: 'Bahnschrift', sans-serif;
             color: $color-folk-purple;
+
+            @media screen and (max-width: 767px) {
+                font-size: 1.75rem;
+                text-align: center;
+            }
+
+            @media screen and (min-width: 1600px) {
+                height: 110px;
+                line-height: 52px;
+                font-size: 3.25rem;
+            }
         }
     }
 
@@ -130,10 +165,18 @@ $layout-name: 'l-programme';
                         &__item-child {
                             &:nth-of-type(odd) {
                                 order: 2;
+
+                                @media screen and (max-width: 991px) {
+                                    order: 1;
+                                }
                             }
 
                             &:nth-of-type(even) {
                                 order: 1;
+                                
+                                @media screen and (max-width: 991px) {
+                                    order: 2;
+                                }
                             }
                         }
                     }
@@ -142,6 +185,7 @@ $layout-name: 'l-programme';
         }
 
         &__title {
+            line-height: 100%;
             font-size: 7.5rem !important;
             font-family: 'BROKENZ';
             color: #DC30CE;
@@ -166,8 +210,13 @@ $layout-name: 'l-programme';
 
         &__text {
             line-height: 100%;
+            display: block;
             font-size: 1.75rem;
             font-family: 'Bahnschrift', sans-serif;
+
+            @media screen and (max-width: 767px) {
+                font-size: 1.25rem;
+            }
 
             @media screen and (min-width: 1600px) {
                 font-size: 2.375rem;

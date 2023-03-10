@@ -46,6 +46,7 @@ function photos_init() {
         'supports'     => array('title', 'thumbnail'), 
         'menu_icon'    => 'dashicons-format-gallery'
     );
+
     register_post_type('photo', $args );
 }
 add_action( 'init', 'photos_init' );
