@@ -120,27 +120,25 @@ get_header();
 					data-aos="fade-up" data-aos-duration="1500">
 
 					<div class="mt-12 bg-folk--white pl-5 pr-3 pb-xl-0 pb-4">
-						<h2 class="color-folk--yellow-weak font-size-84 u-font-family-bronkz">HELLO,</h2>
+						<h2 class="color-folk--yellow-weak font-size-84 u-font-family-bronkz"><?php echo get_field('titulo_apresentacao') ?></h2>
 
 						<p>
-							Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sunt quam dicta aperiam similique? Culpa quod officiis vitae mollitia obcaecati nesciunt eveniet unde corrupti magni, ratione debitis! Iste doloribus necessitatibus delectus.
+							<?php echo get_field('descricao_aprensentacao') ?>
 						</p>
 
-						<p>
-							Lorem ipsum dolor sit amet consectetur, adipisicing elit. Soluta, aspernatur, vero earum odio veniam, voluptatum iste explicabo velit modi facere voluptatem cum? Magnam, laborum optio consequatur eligendi quia facilis explicabo.
-						</p>
+
 
 						<div class="d-flex align-items-center flex-column">
 							<div class="col-md-9 col-12">
 								<div>
-									<a href="#" class="button-cta py-3 px-md-5 px-2 mt-4 d-flex align-items-center justify-content-center  text-center"> Learn more about me
+									<a href="<?php echo get_field('botao_1_apresentacao') ?>" class="button-cta py-3 px-md-5 px-2 mt-4 d-flex align-items-center justify-content-center  text-center"> Learn more about me
 										<i class="far fa-chevron-right u-font-weight-black pr-4 pl-3 font-size-30"></i>
 									</a>
 								</div>
 							</div>
 							
 							<div class="col-md-9 col-sm-12">
-								<a href="#" class="button-cta button-cta--watch-my py-3 px-md-5 px-sm-2 mt-4 d-block text-center">Watch my Tedx session today</a>
+								<a href="<?php echo get_field('botao_2_apresentacao') ?>" class="button-cta button-cta--watch-my py-3 px-md-5 px-sm-2 mt-4 d-block text-center">Watch my Tedx session today</a>
 							</div>
 						</div>
 					</div>

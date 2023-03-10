@@ -15,22 +15,22 @@
 			<div class="col-xxl-4 col-xl-5 col-lg-8 col-md-10 d-flex flex-column flex-xl-wrap justify-content-xl-between justify-content-md-center">
 
 				<div class="bg-folk--white px-md-5 px-3 py-6 rounded-lg">
-					<h2 class="text-uppercase color-folk--light-purple font-size-64 u-font-family-bronkz">blog</h2>
-					<p class="color-folk--purple">Lorem ipsum dolor sit amet, <br>
+					<h2 class="text-uppercase color-folk--light-purple font-size-64 u-font-family-bronkz xxl:u-font-size-150">blog</h2>
+					<p class="color-folk--purple xxl:u-font-size-22">Lorem ipsum dolor sit amet, <br>
 					consectetur adipiscing elit, sed do <br>
 					eiusmod tempor incididunt ut <br>
 					labore et dolore magna aliqua. <br>
 					Quis ipsum suspendisse ultrices gravida. </p>
 
 					<div class="col-md-9 col-10 px-0">
-						<a href="../page-blog.php" class="button-cta py-3 px-4 mt-4 d-flex align-items-center justify-content-between font-size-22">Read More 
+						<a href="<?php echo esc_url(site_url('/blog/')) ?>" class="button-cta py-3 px-4 mt-4 d-flex align-items-center justify-content-between font-size-22">Read More 
 							<i class="far fa-chevron-right u-font-weight-black pl-4 pr-3 font-size-30"></i>
 						</a>
 					</div>
 				</div>
 
-				<div class="bg-folk--pink py-5 rounded-lg mt-3">
-					<h2 class="text-uppercase color-folk--yellow-weak font-size-64 u-font-family-bronkz px-md-5 px-3">
+				<div class="bg-folk--pink py-5 rounded-lg mt-21">
+					<h2 class="text-uppercase color-folk--yellow-weak font-size-64 xxl:u-font-size-84 u-font-family-bronkz px-md-5 px-3">
 						be part of our female <br>
 						empowerment <br>
 						community
@@ -54,9 +54,9 @@
 				</style>
 
 				<div class="bg-folk--yellow-clear px-md-5 px-3 py-5 rounded-lg d-flex flex-column flex-wrap banner-position-guard mt-xl-0 mt-3">
-					<h2 class="text-uppercase color-folk--light-purple font-size-84 u-font-family-bronkz">mind and body</h2>
-					<h3 class="color-folk--purple">defence programme</h3>
-					<p class="color-folk--purple">
+					<h2 class="text-uppercase color-folk--light-purple font-size-84 u-font-family-bronkz xxl:u-font-size-104">mind and body</h2>
+					<h3 class="color-folk--purple xxl:u-font-size-39">defence programme</h3>
+					<p class="color-folk--purple font-size-22">
 						This is a resilience <br>
 						building programme <br>
 						that uses a dual <br>
@@ -66,7 +66,7 @@
 						skills.
 					</p>
 
-					<ul class="u-list-style-none">
+					<ul class="u-list-style-none font-size-22">
 						<li class="color-folk--purple u-font-weight-bold">- Mindset Training <br> Technique</li>
 						<li class="color-folk--purple u-font-weight-bold">- Physical <br> Self-Defence </li>
 					</ul>
@@ -85,8 +85,8 @@
 						background-size: cover;
 					}
 				</style>
-				<div class="bg-folk--purple-clear py-4 rounded-lg mt-3 banner-with-me">
-					<h2 class="text-uppercase color-folk--yellow-weak font-size-64 u-font-family-bronkz pl-md-10 pl-3">
+				<div class="bg-folk--purple-clear py-4 rounded-lg mt-22 banner-with-me">
+					<h2 class="text-uppercase color-folk--yellow-weak font-size-64 xxl:u-font-size-84 u-font-family-bronkz pl-md-10 pl-3">
 						book a call <br>
 						with me
 					</h2>

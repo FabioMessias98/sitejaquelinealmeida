@@ -47,7 +47,7 @@ get_header();
                             techniques, today.
                             </p>
 
-                            <div class="pb-4 px-3">
+                            <div class="pb-5 px-3">
                                 <div class="col-xl-9 col-xxl-8 col-md-6 col-11 px-0 ml-md-6 ml-3">
                                     <a href="#" class="button-cta button-cta--learn-blog py-3 px-3 mt-4 d-flex justify-content-between align-items-center u-font-family-Bahnschrift">Join our self defense course
                                         <i class="far fa-chevron-right u-font-weight-black pr-4 font-size-30" style="opacity: 0.7;"></i>
