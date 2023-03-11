@@ -1,0 +1,91 @@
+$layout-name: 'l-selected';
+
+.#{$layout-name} {
+    width: 100%;
+    height: calc(1.5em + 0.75rem + 2px);
+    padding: 2rem 2rem 2rem .5rem;
+    box-shadow: 5px 10px 29px 0 rgba(68,88,144,.1);
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: $color-folk-white;
+    z-index: 9;
+
+    &__current {
+        font-size: 1.375rem;
+        font-weight: 700;
+        font-family: 'Bahnschrift';
+        color: $color-folk-purple;
+
+        @media screen and (min-width: 1600px) {
+            font-size: 2.625rem;
+        }
+    }
+
+    &__items {
+        width: 100%;
+        top: calc(50% + 1rem);
+        left: 50%;
+        transform: translateX(-50%);
+        transition: all .4s;
+        opacity: 0;
+        visibility: hidden;
+        box-shadow: 5px 10px 29px 0 rgba(68,88,144,.1);
+        position: absolute;
+        background-color: $color-folk-white;
+
+        .is-active & {
+            top: calc(100% + 1rem);
+            opacity: 1;
+            visibility: visible;
+        }
+    }
+
+    &__item {
+        padding: .2rem;
+        font-size: 1.375rem;
+        font-weight: 700;
+        font-family: 'Bahnschrift';
+        text-align: center;
+        color: $color-folk-purple;
+        cursor: pointer;
+
+        @media screen and (min-width: 1600px) {
+            font-size: 1.5rem;
+        }
+
+        &:hover {
+            color: $color-folk-yellow;
+            background-color: $color-folk-purple;
+        }
+    }
+
+    &__arrow {
+        width: 80px;
+        height: 100%;
+        top: 0;
+        right: 0;
+        position: absolute;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: $color-folk-pink;
+
+        &::before {
+            content: '\f078';
+            transform: rotate(0deg);
+            transition: all .4s;
+            font-size: 1.5rem;
+            font-weight: 700;
+            font-family: 'Font Awesome 5 Free';
+            color: $color-folk-white;
+        }
+
+        .is-active & {
+            &::before {
+                transform: rotate(-180deg);
+            }
+        }
+    }
+}

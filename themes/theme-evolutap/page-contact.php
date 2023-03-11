@@ -105,7 +105,7 @@ while ( have_posts() ) : the_post(); ?>
 							id="email">
 						</div>
 
-						<div class="d-flex flex-lg-row flex-md-column align-items-center">
+						<div class="d-flex flex-wrap align-items-end">
 							<div class="col-xl-6 col-lg-6 col-12 mt-4 pl-1 pr-lg-5 pr-0">
 								<label class="color-folk--purple u-font-family-Bahnschrift u-font-size-26 font-weight-bold">Phone</label>
 								<input
@@ -114,7 +114,7 @@ while ( have_posts() ) : the_post(); ?>
 								id="phone">
 							</div>
 
-							<div class="col-xl-6 col-md-12 col-lg-6 col-12 mt-20 px-md-1">
+							<!-- <div class="col-xl-6 col-md-12 col-lg-6 col-12 mt-20 px-md-1">
 								<select class="form-control border-0 rounded-0 box-shadow-folk" style="padding: 2rem 0.5rem;"> 
 									<option selected>What would you like to know </option>
 									<option>Mind&Body Defense Programme</option>
@@ -122,6 +122,33 @@ while ( have_posts() ) : the_post(); ?>
 									<option>Videos</option>
 									<option>Mind&Body Defense Programme</option>
 								</select>
+							</div> -->
+
+							<div class="col-lg-6 mt-13 pl-2 pr-0 px-md-1">
+
+								<input type="hidden" id="selected-contact">
+
+								<div class="l-selected js-selected">
+									<div class="l-selected__current js-selected-current">
+										Selecionar
+									</div>
+
+									<div class="l-selected__items">
+										<div class="l-selected__item js-selected-item">
+											Mind&Body Defense Programme
+										</div>
+
+										<div class="l-selected__item js-selected-item">
+											Newsletter
+										</div>
+
+										<div class="l-selected__item js-selected-item">
+											Videos
+										</div>
+									</div>
+
+									<div class="l-selected__arrow"></div>
+								</div>
 							</div>
 						</div>
 
